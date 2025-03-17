@@ -8,7 +8,7 @@ const blogPosts = [
     title: "Community Outreach Success",
     description:
       "Our recent community outreach program reached over 500 families, providing essential supplies and spiritual support...",
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&auto=format",
+    image: "./images/g5.jpg",
     date: "March 15, 2024",
     author: "Pastor John Moyo",
     category: "Outreach",
@@ -18,7 +18,7 @@ const blogPosts = [
     title: "Youth Ministry Highlights",
     description:
       "Celebrating the achievements of our youth ministry programs and their impact on young lives in our community...",
-    image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&auto=format",
+    image: "./images/g6.jpg",
     date: "March 10, 2024",
     author: "Youth Leader Sarah Ndlovu",
     category: "Youth",
@@ -28,7 +28,7 @@ const blogPosts = [
     title: "Prayer & Worship Night",
     description:
       "Join us for our monthly prayer and worship night, where we come together as a community to seek God's presence...",
-    image: "https://images.unsplash.com/photo-1445445290350-18a3b86e0b5b?w=800&auto=format",
+    image: "./images/event2.jpg",
     date: "March 5, 2024",
     author: "Worship Leader David Mutasa",
     category: "Worship",

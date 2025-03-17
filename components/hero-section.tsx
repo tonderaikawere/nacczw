@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="relative h-[90vh] w-full bg-gradient-to-r from-primary/10 to-primary/5">
+    <section className="relative h-[90vh] w-full bg-gradient-to-r from-primary/10 to-primary/5 flex items-center justify-center">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-full items-center justify-center text-center">
           <div className="space-y-8">

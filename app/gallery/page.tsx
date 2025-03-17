@@ -9,49 +9,49 @@ export const metadata: Metadata = {
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=800&auto=format",
+    src: "./images/event2.jpg",
     alt: "Church congregation during worship",
     caption: "Sunday Worship Service",
     category: "Worship",
   },
   {
-    src: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800&auto=format",
+    src: "./images/g4.jpg",
     alt: "Youth group activities",
     caption: "Youth Leadership Program",
     category: "Youth",
   },
   {
-    src: "https://images.unsplash.com/photo-1544427920-c49ccfb85579?w=800&auto=format",
+    src: "./images/g1.jpg",
     alt: "Community outreach program",
     caption: "Community Outreach",
     category: "Outreach",
   },
   {
-    src: "https://images.unsplash.com/photo-1511649475669-e288648b2339?w=800&auto=format",
+    src: "./images/event3.jpg",
     alt: "Bible study group",
     caption: "Bible Study",
     category: "Education",
   },
   {
-    src: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format",
+    src: "./images/event1.jpg",
     alt: "Church choir",
     caption: "Praise & Worship",
     category: "Music",
   },
   {
-    src: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&auto=format",
+    src: "./images/g6.jpg",
     alt: "Community service",
     caption: "Serving the Community",
     category: "Outreach",
   },
   {
-    src: "https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&auto=format",
+    src: "./images/g1.jpg",
     alt: "Prayer meeting",
     caption: "Prayer Groups",
     category: "Prayer",
   },
   {
-    src: "https://images.unsplash.com/photo-1601142634808-38923eb7c560?w=800&auto=format",
+    src: "./images/event3.jpg",
     alt: "Church building",
     caption: "Our Facilities",
     category: "Facilities",

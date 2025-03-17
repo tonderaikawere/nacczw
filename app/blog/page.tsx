@@ -15,7 +15,7 @@ const posts = [
     title: "Community Outreach Success",
     description:
       "Our recent community outreach program has made a significant impact in the local community, reaching over 500 families with essential supplies and spiritual support.",
-    image: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg",
+    image: "./images/g2.jpg",
     date: "March 15, 2024",
     author: "Pastor John Moyo",
     category: "Outreach",
@@ -25,7 +25,7 @@ const posts = [
     title: "Youth Ministry Highlights",
     description:
       "Celebrating the achievements of our youth ministry programs and their impact on young lives in our community.",
-    image: "https://images.pexels.com/photos/8523586/pexels-photo-8523586.jpeg",
+    image: "./images/g6.jpg",
     date: "March 10, 2024",
     author: "Youth Leader Sarah Ndlovu",
     category: "Youth",
@@ -35,7 +35,7 @@ const posts = [
     title: "Prayer & Worship Night",
     description:
       "Join us for our monthly prayer and worship night, where we come together as a community to seek God's presence.",
-    image: "https://images.pexels.com/photos/7144439/pexels-photo-7144439.jpeg",
+    image: "./images/g3.jpg",
     date: "March 5, 2024",
     author: "Worship Leader David Mutasa",
     category: "Worship",
@@ -45,7 +45,7 @@ const posts = [
     title: "Building Strong Families",
     description:
       "Discover biblical principles for building and maintaining strong, Christ-centered families in today's world.",
-    image: "https://images.pexels.com/photos/7282419/pexels-photo-7282419.jpeg",
+    image: "./images/g1.jpg",
     date: "March 1, 2024",
     author: "Pastor James Dube",
     category: "Family",
@@ -55,7 +55,7 @@ const posts = [
     title: "Serving Our Community",
     description:
       "Learn about our latest community service initiatives and how you can get involved in making a difference.",
-    image: "https://images.pexels.com/photos/6994992/pexels-photo-6994992.jpeg",
+    image: "./images/g5.jpg",
     date: "February 25, 2024",
     author: "Outreach Coordinator Peter Ncube",
     category: "Outreach",
@@ -64,7 +64,7 @@ const posts = [
     slug: "power-of-prayer",
     title: "The Power of Prayer",
     description: "Exploring the transformative power of prayer in our daily lives and community.",
-    image: "https://images.pexels.com/photos/4019766/pexels-photo-4019766.jpeg",
+    image: "./images/g3.jpg",
     date: "February 20, 2024",
     author: "Elder Mary Sibanda",
     category: "Spiritual Growth",

@@ -56,7 +56,7 @@ export function GetStartedSection() {
           </div>
           <div className="relative aspect-square lg:aspect-[4/3]">
             <Image
-              src="https://images.unsplash.com/photo-1601142634808-38923eb7c560?w=800&auto=format"
+              src="./images/event2.jpg"
               alt="NACC Community"
               fill
               className="rounded-lg object-cover"

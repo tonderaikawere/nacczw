@@ -9,7 +9,7 @@ const events = [
     date: "20 October 2023",
     description:
       "Empowering Youth, Enriching Our Community: NACC's Broiler Chicken Project. Join us in an innovative initiative that combines faith, entrepreneurship, and social impact!",
-    image: "https://images.unsplash.com/photo-1516939884455-1445c8652f83?w=800&auto=format",
+    image: "./images/event1.jpg",
     link: "/events/rebirth-rehabilitation",
     location: "Bulawayo",
   },
@@ -18,7 +18,7 @@ const events = [
     date: "20 October 2023",
     description:
       "NACC visited rural villages, providing medical supplies for livestock and building relationships with local communities. The team distributed vaccines and deworming medication.",
-    image: "https://images.unsplash.com/photo-1567818668259-e81acb41f0cd?w=800&auto=format",
+    image: "./images/event3.jpg",
     link: "/events/rural-support",
     location: "Rural Villages",
   },
@@ -27,7 +27,7 @@ const events = [
     date: "15 April 2024",
     description:
       "Join us for our annual youth leadership conference focusing on spiritual growth and community leadership development.",
-    image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&auto=format",
+    image: "./images/event2.jpg",
     link: "/events/youth-conference",
     location: "Harare",
   },
@@ -35,7 +35,7 @@ const events = [
     title: "Community Prayer Summit",
     date: "1 May 2024",
     description: "A powerful gathering for united prayer focusing on our nation, communities, and families.",
-    image: "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&auto=format",
+    image: "./images/event4.jpg",
     link: "/events/prayer-summit",
     location: "Multiple Locations",
   },

@@ -4,22 +4,22 @@ import Link from "next/link"
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=800&auto=format",
+    src: "./images/g1.jpg",
     alt: "Church congregation during worship",
     caption: "Sunday Worship Service at NACC",
   },
   {
-    src: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800&auto=format",
+    src: "./images/g2.jpg",
     alt: "Youth group activities",
     caption: "Youth Leadership Program",
   },
   {
-    src: "https://images.unsplash.com/photo-1544427920-c49ccfb85579?w=800&auto=format",
+    src: "./images/g3.jpg",
     alt: "Community outreach program",
     caption: "Community Outreach Initiative",
   },
   {
-    src: "https://images.unsplash.com/photo-1511649475669-e288648b2339?w=800&auto=format",
+    src: "./images/g4.jpg",
     alt: "Bible study group",
     caption: "Weekly Bible Study Sessions",
   },
