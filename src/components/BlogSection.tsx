@@ -72,7 +72,7 @@ const BlogSection: React.FC = () => {
             <Typography variant="h5" sx={{ marginBottom: '10px' }}>{event.title}</Typography>
             <Typography variant="body1" sx={{ marginBottom: '10px' }}>{`${event.date} | ${event.time} | ${event.location}`}</Typography>
             <Typography variant="body2" sx={{ marginBottom: '20px' }}>{event.summary}</Typography>
-            <Button component={Link} to={event.link} variant="contained" sx={{ backgroundColor: '#218000' }}>Contact Us</Button>
+            <Button component={Link} to={event.link} variant="contained" sx={{ backgroundColor: '#218000' }}>Read More</Button>
           </CardContent>
         </Card>
       ))}
