@@ -72,7 +72,7 @@ const ContactSection: React.FC = () => {
       <Box sx={{ width: { xs: '100%', md: '50%' }, marginTop: { xs: '40px', md: '0' } }}>
         <iframe
           title="Location Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151!2d144.9537363!3d-37.8162799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43fdb5b8db%3A0x70418b1cdb3986a7!2sFavour%20Preschool!5e0!3m2!1sen!2sza!4v1637664608745!5m2!1sen!2sza"
+          src="https://maps.google.com/maps?q=Gwanda,Zimbabwe&t=&z=13&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="400"
           style={{ border: 0 }}
