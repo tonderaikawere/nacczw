@@ -19,7 +19,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "What areas do you operate in?",
-    answer: "NACC operates in various regions, including [List of Areas or Regions]. Our aim is to support and strengthen Christian communities throughout these areas."
+    answer: "NACC operates in various regions, including Harare, Bulawayo, Mutare, Gweru, and Masvingo. Our aim is to support and strengthen Christian communities throughout these areas."
   },
   {
     question: "What are the main objectives of NACC?",
