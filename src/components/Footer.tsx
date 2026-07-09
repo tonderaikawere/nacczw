@@ -82,7 +82,7 @@ const Footer: React.FC<FooterProps> = () => {
         </IconButton>
         <IconButton
           component={Link}
-          href="https://instagram.com/your-instagram-page" // Instagram page URL
+          href="https://instagram.com/nacczw" // Instagram page URL
           target="_blank"
           color="inherit"
           sx={{
@@ -96,7 +96,7 @@ const Footer: React.FC<FooterProps> = () => {
         </IconButton>
         <IconButton
           component={Link}
-          href="https://twitter.com/your-twitter-handle" // Twitter handle
+          href="https://twitter.com/nacczw" // Twitter handle
           target="_blank"
           color="inherit"
           sx={{
@@ -110,7 +110,7 @@ const Footer: React.FC<FooterProps> = () => {
         </IconButton>
         <IconButton
           component={Link}
-          href="https://youtube.com/your-youtube-channel" // YouTube channel URL
+          href="https://youtube.com/@nacczw" // YouTube channel URL
           target="_blank"
           color="inherit"
           sx={{
