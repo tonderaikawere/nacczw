@@ -1,6 +1,7 @@
 // src/components/VolunteerSection.tsx
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Box, Typography, Button } from '@mui/material';
 
 const VolunteerSection: React.FC = () => {
@@ -52,7 +53,7 @@ const VolunteerSection: React.FC = () => {
         <Button
           variant="contained"
           color="primary"
-          href="/contact"
+          component={Link} to="/contact"
           sx={{
             mt: 2,
             backgroundColor: '#218000',
