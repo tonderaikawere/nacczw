@@ -1,4 +1,4 @@
-// src/pages/About/AboutSection.js
+// src/components/AboutSection.tsx
 
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
