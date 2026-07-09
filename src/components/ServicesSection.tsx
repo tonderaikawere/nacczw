@@ -33,7 +33,7 @@ const services: Service[] = [
   { id: 5, title: 'Community Outreach', summary: 'Be a part of our mission to serve the community.', icon: <AccessibilityIcon sx={{ fontSize: 60 }} />, time: 'Saturdays 10:00 AM' },
   { id: 6, title: 'Bible Study', summary: 'Engage in thoughtful discussion and study of scripture.', icon: <BookIcon sx={{ fontSize: 60 }} />, time: 'Fridays 7:00 PM' },
   { id: 7, title: 'Youth Programs', summary: 'Empowering youth to grow in faith and fellowship.', icon: <PeopleIcon sx={{ fontSize: 60 }} />, time: 'Sundays 3:00 PM' },
-  { id: 8, title: 'Baptisms', summary: 'Join us to witness the profound and joyous occasion of baptism.', icon: <OpacityIcon sx={{ fontSize: 60, color: '#218000' }} />, time: 'Sundays 3:00 PM' },
+  { id: 8, title: 'Baptisms', summary: 'Join us to witness the profound and joyous occasion of baptism.', icon: <OpacityIcon sx={{ fontSize: 60, color: 'inherit' }} />, time: 'Sundays 3:00 PM' },
 ];
 
 const ServicesSection: React.FC<ServicesSectionProps> = () => {
