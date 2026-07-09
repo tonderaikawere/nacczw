@@ -56,6 +56,7 @@ const Footer: React.FC<FooterProps> = () => {
           component={Link}
           href="https://wa.me/+263785383686" // WhatsApp number
           target="_blank"
+          rel="noopener noreferrer"
           color="inherit"
           sx={{
             color: '#218000', // Brand green color
@@ -70,6 +71,7 @@ const Footer: React.FC<FooterProps> = () => {
           component={Link}
           href="https://www.facebook.com/profile.php?id=61555980522114" // Facebook page URL
           target="_blank"
+          rel="noopener noreferrer"
           color="inherit"
           sx={{
             color: '#218000', // Brand green color
@@ -84,6 +86,7 @@ const Footer: React.FC<FooterProps> = () => {
           component={Link}
           href="https://instagram.com/nacczw" // Instagram page URL
           target="_blank"
+          rel="noopener noreferrer"
           color="inherit"
           sx={{
             color: '#218000', // Brand green color
@@ -98,6 +101,7 @@ const Footer: React.FC<FooterProps> = () => {
           component={Link}
           href="https://twitter.com/nacczw" // Twitter handle
           target="_blank"
+          rel="noopener noreferrer"
           color="inherit"
           sx={{
             color: '#218000', // Brand green color
@@ -112,6 +116,7 @@ const Footer: React.FC<FooterProps> = () => {
           component={Link}
           href="https://youtube.com/@nacczw" // YouTube channel URL
           target="_blank"
+          rel="noopener noreferrer"
           color="inherit"
           sx={{
             color: '#218000', // Brand green color
