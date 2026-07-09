@@ -127,7 +127,7 @@ const InformationSection: React.FC = () => {
         </Typography>
         {contactInfo.map(({ icon, text, link }, index) => (
           <Box key={index} sx={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-            <IconButton sx={{ color: '#fff' }} component={link ? 'a' : 'span'} href={link} target={link ? '_blank' : undefined}>
+            <IconButton sx={{ color: '#fff' }} component={link ? 'a' : 'span'} href={link} target={link && link.startsWith('http') ? '_blank' : undefined}>
               {icon}
             </IconButton>
             <Link href={link} color="#fff" underline="none" sx={{ marginLeft: '10px' }}>
