@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const handleScroll = () => {
+  const handleScroll = (): void => {
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setScrollingDown(currentScrollTop > lastScrollTop);
     setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); // For Mobile or negative scrolling
