@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Box, Typography, Button, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -62,7 +63,7 @@ const FAQSection: React.FC = () => {
         <Button
           variant="contained"
           color="primary"
-          href="/about"
+          component={Link} to="/contact"
           sx={{
             mt: 2,
             boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)',
