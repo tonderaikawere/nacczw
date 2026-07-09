@@ -45,9 +45,9 @@ const Footer: React.FC<FooterProps> = () => {
           display: 'flex',
           alignItems: 'center',
           '& a': {
-            color: '#218000', // Orange color
+            color: '#218000', // Brand green color
             '&:hover': {
-              color: '#218000', // Ensure orange color on hover
+              color: '#218000', // Ensure green color on hover
             },
           },
         }}
@@ -58,9 +58,9 @@ const Footer: React.FC<FooterProps> = () => {
           target="_blank"
           color="inherit"
           sx={{
-            color: '#218000', // Orange color
+            color: '#218000', // Brand green color
             '&:hover': {
-              color: '#218000', // Ensure orange color on hover
+              color: '#218000', // Ensure green color on hover
             },
           }}
         >
@@ -72,9 +72,9 @@ const Footer: React.FC<FooterProps> = () => {
           target="_blank"
           color="inherit"
           sx={{
-            color: '#218000', // Orange color
+            color: '#218000', // Brand green color
             '&:hover': {
-              color: '#218000', // Ensure orange color on hover
+              color: '#218000', // Ensure green color on hover
             },
           }}
         >
@@ -86,9 +86,9 @@ const Footer: React.FC<FooterProps> = () => {
           target="_blank"
           color="inherit"
           sx={{
-            color: '#218000', // Orange color
+            color: '#218000', // Brand green color
             '&:hover': {
-              color: '#218000', // Ensure orange color on hover
+              color: '#218000', // Ensure green color on hover
             },
           }}
         >
@@ -100,9 +100,9 @@ const Footer: React.FC<FooterProps> = () => {
           target="_blank"
           color="inherit"
           sx={{
-            color: '#218000', // Orange color
+            color: '#218000', // Brand green color
             '&:hover': {
-              color: '#218000', // Ensure orange color on hover
+              color: '#218000', // Ensure green color on hover
             },
           }}
         >
@@ -114,9 +114,9 @@ const Footer: React.FC<FooterProps> = () => {
           target="_blank"
           color="inherit"
           sx={{
-            color: '#218000', // Orange color
+            color: '#218000', // Brand green color
             '&:hover': {
-              color: '#218000', // Ensure orange color on hover
+              color: '#218000', // Ensure green color on hover
             },
           }}
         >
