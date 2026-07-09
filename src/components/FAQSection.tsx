@@ -15,7 +15,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "Where is the NACC located?",
-    answer: "The NACC is headquartered in [Your Location]. We have member churches and operations across various regions."
+    answer: "The NACC is headquartered in Harare, Zimbabwe. We have member churches and operations across various regions."
   },
   {
     question: "What areas do you operate in?",
