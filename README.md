@@ -1,86 +1,75 @@
-# Getting Started with Create React App
+# National Association of Christian Churches (NACC)
 
-This project was bootstrapped and migrated to [Vite](https://vitejs.dev/) with TypeScript.
+A modern, responsive, and feature-rich web application built for the **National Association of Christian Churches (NACC)** in Zimbabwe. This platform helps foster spiritual unity, coordinate community outreach programs, present church services, share blog updates, and facilitate secure donations.
 
-## Available Scripts
+Developed with care by **[Kawerify Tech](https://kawerifytech.com)**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend Library**: [React 18](https://react.dev/)
+- **Programming Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool / Dev Server**: [Vite](https://vitejs.dev/)
+- **Component & Styling Library**: [Material UI (MUI) v6](https://mui.com/)
+- **Routing**: [React Router DOM v6](https://reactrouter.com/)
+- **Carousel & Sliders**: [Swiper](https://swiperjs.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🌟 Key Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Dynamic Homepage**: High-impact slideshow banner, brief about section, latest events, FAQs, and a volunteer call-to-action.
+- **Detailed About Us**: Detailed pages highlighting NACC's mission, vision, core beliefs, and historical journey.
+- **Interactive Services**: Interactive weekly services list with times, descriptions, and a request form dialog.
+- **Media Gallery**: Categories of images documenting church events and community outreaches.
+- **Leadership & Team**: Structured list of church leaders, pastors, and administrators.
+- **Blog & News**: Read posts and updates about the latest visits, training sessions, and developmental projects in Zimbabwe.
+- **Contact & Map**: Integrated custom contact form pointing to FormSubmit and an embedded live map for the main branch in Gwanda, Zimbabwe.
+- **Secure Donations**: A dedicated donation page with instructions for partners and members to contribute.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Installation and Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/tonderaikawere/nacczw.git
+   cd nacc
+   ```
 
-### `npm run eject`
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   *The application will be accessible at `http://localhost:5173` (or the port specified in terminal).*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   *This outputs minified and optimized production assets in the `dist` folder.*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Preview the production build locally:**
+   ```bash
+   npm run preview
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📄 License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 💻 Developer Attribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-## Running & Building the Application
-
-- Start development server:
-  ```bash
-  npm run dev
-  ```
-- Build production distribution:
-  ```bash
-  npm run build
-  ```
-- Preview production build locally:
-  ```bash
-  npm run preview
-  ```
+This platform was developed by **[Kawerify Tech](https://kawerifytech.com)**. We build professional, high-performance web applications tailored to your business or community needs.
