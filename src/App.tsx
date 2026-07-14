@@ -10,7 +10,7 @@ import Services from './pages/Services/Services';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
 import OurGallery from './pages/Gallery/OurGallery';
-import OurTeam from './pages/Team/OurTeam';
+
 import Donation from './pages/Donate/Donate';
 
 const App: React.FC = () => {
@@ -23,7 +23,7 @@ const App: React.FC = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/gallery" element={<OurGallery />} />
-        <Route path="/team" element={<OurTeam />} />
+        
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donation />} />
         <Route path="/app-download" element={<AppDownload />} />

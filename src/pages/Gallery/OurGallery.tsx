@@ -45,66 +45,7 @@ const OurGallery: React.FC = () => {
           zIndex: 0,
         }}
       >
-        <SwiperSlide>
-          <Box
-            component="img"
-            src="/images/hero.png"
-            alt="Hero Image 1"
-            sx={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box
-            component="img"
-            src="/images/hero2.png"
-            alt="Hero Image 2"
-            sx={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box
-            component="img"
-            src="/images/hero3.png"
-            alt="Hero Image 3"
-            sx={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box
-            component="img"
-            src="/images/hero4.png"
-            alt="Hero Image 4"
-            sx={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box
-            component="img"
-            src="/images/hero5.png"
-            alt="Hero Image 5"
-            sx={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        </SwiperSlide>
+        
       </Swiper>
 
       {/* Text content */}
@@ -176,7 +117,7 @@ const OurGallery: React.FC = () => {
   >
     <Box
       component="img"
-      src="/images/about2.png" // Replace with your first small image
+      src="/images/img2.png" // Replace with your first small image
       alt="About Us Image 1"
       sx={{
         width: '100%',
@@ -188,7 +129,7 @@ const OurGallery: React.FC = () => {
     />
     <Box
       component="img"
-      src="/images/about3.png" // Replace with your second small image
+      src="/images/img3.png" // Replace with your second small image
       alt="About Us Image 2"
       sx={{
         width: '100%',

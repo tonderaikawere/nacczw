@@ -118,19 +118,7 @@ const Header: React.FC<HeaderProps> = () => {
               Gallery
             </Button>
           </Link>
-          <Link to="/team" style={{ textDecoration: 'none' }}>
-            <Button
-              sx={{
-                color: path === '/team' ? '#218000' : '#666666',
-                mx: 1,
-                '&:hover': {
-                  color: '#218000',
-                },
-              }}
-            >
-              Team
-            </Button>
-          </Link>
+          
 
           <Link to="/contact" style={{ textDecoration: 'none' }}>
             <Button
@@ -261,19 +249,7 @@ const Header: React.FC<HeaderProps> = () => {
                 Gallery
               </Button>
             </Link>
-            <Link to="/team" style={{ textDecoration: 'none' }}>
-              <Button
-                sx={{
-                  color: path === '/team' ? '#218000' : '#666666',
-                  my: 1,
-                  '&:hover': {
-                    color: '#218000',
-                  },
-                }}
-              >
-                Team
-              </Button>
-            </Link>
+            
 
             <Link to="/contact" style={{ textDecoration: 'none' }}>
               <Button

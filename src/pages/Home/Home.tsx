@@ -6,7 +6,7 @@ import HeroSection from '../../components/HeroSection'; // Import the HeroSectio
 import AboutSection from '../../components/AboutSection';
 import ServicesSection from '../../components/ServicesSection';
 import GallerySection from '../../components/GallerySection';
-import TeamSection from '../../components/OurTeamSection';
+
 import ContactSection from '../../components/ContactSection';
 import InformationSection from '../../components/InformationSection';
 import Footer from '../../components/Footer';
@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
       <FAQSection/>
       <GetStartedSection/>
       <VolunteerSection/>
-      <TeamSection />
+      
       <ContactSection />
       <InformationSection />
       <Footer />
