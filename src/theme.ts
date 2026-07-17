@@ -7,11 +7,11 @@ const theme = createTheme({
       contrastText: '#ffffff',
     },
     secondary: {
-      main: '#E5A900', // Grace Gold
+      main: '#E5A900', // Brand Gold
       contrastText: '#ffffff',
     },
     background: {
-      default: '#F8FAFC',
+      default: '#FDFDFD',
       paper: '#ffffff',
     },
     text: {
@@ -20,20 +20,20 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Poppins", "Inter", sans-serif',
+    fontFamily: '"Poppins", "Instrument Sans", sans-serif',
     h1: {
       fontFamily: '"Poppins", sans-serif',
-      fontWeight: 700,
+      fontWeight: 800,
       letterSpacing: '-0.02em',
     },
     h2: {
       fontFamily: '"Poppins", sans-serif',
-      fontWeight: 700,
+      fontWeight: 800,
       letterSpacing: '-0.02em',
     },
     h3: {
       fontFamily: '"Poppins", sans-serif',
-      fontWeight: 700,
+      fontWeight: 800,
       letterSpacing: '-0.01em',
     },
     h4: {
@@ -56,33 +56,35 @@ const theme = createTheme({
       fontFamily: '"Poppins", sans-serif',
     },
     body1: {
-      fontFamily: '"Poppins", sans-serif',
-      lineHeight: 1.7,
+      fontFamily: '"Instrument Sans", sans-serif',
+      lineHeight: 1.75,
       fontSize: '1.05rem',
     },
     body2: {
-      fontFamily: '"Poppins", sans-serif',
-      lineHeight: 1.7,
+      fontFamily: '"Instrument Sans", sans-serif',
+      lineHeight: 1.75,
       fontSize: '0.95rem',
     },
     button: {
       textTransform: 'none',
-      fontWeight: 600,
+      fontWeight: 700,
       fontFamily: '"Poppins", sans-serif',
+      letterSpacing: '0.02em',
     },
   },
   shape: {
-    borderRadius: 12,
+    borderRadius: 8,
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 30, // Pill shaped buttons
-          padding: '10px 28px',
+          borderRadius: 4, // Clean rectangle buttons typical of Awaiken Themes
+          padding: '12px 32px',
           boxShadow: 'none',
+          transition: 'all 0.3s ease',
           '&:hover': {
-            boxShadow: '0 6px 16px rgba(33, 128, 0, 0.12)',
+            boxShadow: '0 8px 20px rgba(33, 128, 0, 0.15)',
           },
         },
         containedPrimary: {
@@ -91,21 +93,28 @@ const theme = createTheme({
             backgroundColor: '#1b6600',
           },
         },
+        containedSecondary: {
+          backgroundColor: '#E5A900',
+          color: '#ffffff',
+          '&:hover': {
+            backgroundColor: '#c99300',
+          },
+        },
       },
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          borderRadius: 16,
-          boxShadow: '0 8px 30px rgba(0, 0, 0, 0.02)',
-          border: '1px solid #E2E8F0',
+          borderRadius: 8,
+          boxShadow: '0 10px 40px rgba(0, 0, 0, 0.03)',
+          border: '1px solid #F1F5F9',
         },
       },
     },
     MuiAccordion: {
       styleOverrides: {
         root: {
-          borderRadius: 12,
+          borderRadius: 8,
           border: '1px solid #E2E8F0',
           boxShadow: 'none',
           '&:before': {
