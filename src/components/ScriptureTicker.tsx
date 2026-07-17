@@ -11,13 +11,13 @@ const ScriptureTicker: React.FC = () => {
   ];
 
   return (
-    <Box sx={{ backgroundColor: '#0F172A', color: '#FFFFFF', py: 3, borderBottom: '2px solid #E5A900', overflow: 'hidden' }}>
+    <Box sx={{ backgroundColor: '#0F172A', color: '#FFFFFF', py: 4, borderBottom: '2px solid #E5A900', borderTop: '1px solid rgba(255,255,255,0.08)', overflow: 'hidden' }}>
       <div className="marquee-container">
         <div className="marquee-content">
           {[...items, ...items].map((text, idx) => (
-            <div key={idx} className="marquee-item">
-              <span style={{ marginRight: '24px' }}>{text}</span>
-              <CrossIcon sx={{ color: 'secondary.main', fontSize: '24px' }} />
+            <div key={idx} className="marquee-item" style={{ display: 'flex', alignItems: 'center' }}>
+              <span style={{ marginRight: '32px', fontFamily: '"Poppins", sans-serif', fontWeight: 800 }}>{text}</span>
+              <CrossIcon sx={{ color: 'secondary.main', fontSize: '28px', transform: 'rotate(45deg)', mx: 2 }} />
             </div>
           ))}
         </div>
