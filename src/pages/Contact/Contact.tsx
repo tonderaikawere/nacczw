@@ -7,7 +7,11 @@ import Footer from '../../components/Footer';
 const Contact: React.FC = () => {
   return (
     <Box>
-      <Typography variant="h2">Contact Us</Typography>
+      <Box sx={{ py: 8, backgroundColor: '#0F172A', color: '#ffffff', textAlign: 'center' }}>
+        <Typography variant="h2" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800 }}>
+          Contact Us
+        </Typography>
+      </Box>
       <ContactSection />
       <InformationSection />
       <Footer />
