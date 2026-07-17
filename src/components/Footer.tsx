@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Box sx={{ backgroundColor: '#0F172A', color: '#CBD5E1', pt: 6, pb: 4 }}>
+    <Box sx={{ backgroundColor: '#0F172A', color: '#CBD5E1', pt: 6, pb: 4, borderTop: '4px solid #218000' }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
