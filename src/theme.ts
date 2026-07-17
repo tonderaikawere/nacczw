@@ -20,7 +20,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Outfit", "Inter", sans-serif',
+    fontFamily: '"Poppins", "Inter", sans-serif',
     h1: {
       fontFamily: '"Playfair Display", serif',
       fontWeight: 700,
@@ -46,23 +46,25 @@ const theme = createTheme({
       fontWeight: 600,
     },
     subtitle1: {
-      fontFamily: '"Outfit", sans-serif',
+      fontFamily: '"Poppins", sans-serif',
     },
     subtitle2: {
-      fontFamily: '"Outfit", sans-serif',
+      fontFamily: '"Poppins", sans-serif',
     },
     body1: {
-      fontFamily: '"Outfit", sans-serif',
-      lineHeight: 1.6,
+      fontFamily: '"Poppins", sans-serif',
+      lineHeight: 1.7,
+      fontSize: '1.05rem',
     },
     body2: {
-      fontFamily: '"Outfit", sans-serif',
-      lineHeight: 1.6,
+      fontFamily: '"Poppins", sans-serif',
+      lineHeight: 1.7,
+      fontSize: '0.95rem',
     },
     button: {
       textTransform: 'none',
       fontWeight: 600,
-      fontFamily: '"Outfit", sans-serif',
+      fontFamily: '"Poppins", sans-serif',
     },
   },
   shape: {
@@ -73,10 +75,10 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 30, // Pill shaped buttons
-          padding: '8px 24px',
+          padding: '10px 28px',
           boxShadow: 'none',
           '&:hover': {
-            boxShadow: '0 4px 12px rgba(33, 128, 0, 0.15)',
+            boxShadow: '0 6px 16px rgba(33, 128, 0, 0.12)',
           },
         },
         containedPrimary: {
@@ -91,8 +93,8 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 16,
-          boxShadow: '0 8px 30px rgba(0, 0, 0, 0.03)',
-          border: '1px solid #F1F5F9',
+          boxShadow: '0 8px 30px rgba(0, 0, 0, 0.02)',
+          border: '1px solid #E2E8F0',
         },
       },
     },
