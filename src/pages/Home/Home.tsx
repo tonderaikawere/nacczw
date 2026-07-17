@@ -25,7 +25,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <HeroSection onScrollToAbout={scrollToAbout} />
+      <HeroSection />
       {/* About Section */}
       <Box ref={aboutRef}>
         <AboutSection />
