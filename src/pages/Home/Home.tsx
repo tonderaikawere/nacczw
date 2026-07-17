@@ -5,6 +5,7 @@ import AboutSection from '../../components/AboutSection';
 import ServicesSection from '../../components/ServicesSection';
 import BlogSection from '../../components/BlogSection';
 import FAQSection from '../../components/FAQSection';
+import TestimonialSection from '../../components/TestimonialSection';
 import VolunteerSection from '../../components/VolunteerSection';
 import GetStartedSection from '../../components/GetStartedSection';
 import ContactSection from '../../components/ContactSection';
@@ -33,6 +34,8 @@ const Home: React.FC = () => {
       <GetStartedSection />
       {/* Blog/Sermons Grid */}
       <BlogSection />
+      {/* Testimonials */}
+      <TestimonialSection />
       {/* FAQs */}
       <FAQSection />
       {/* Contact Forms */}
