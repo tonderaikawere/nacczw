@@ -39,7 +39,32 @@ const Header: React.FC = () => {
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {navLinks.map((link) => (
               <Link key={link.path} to={link.path} style={{ textDecoration: 'none' }}>
-                <Button sx={{ color: path === link.path ? 'primary.main' : 'text.secondary', mx: 1 }}>
+                <Button
+                  sx={{
+                    color: path === link.path ? 'primary.main' : 'text.secondary',
+                    mx: 1.5,
+                    fontSize: '0.95rem',
+                    fontWeight: 600,
+                    position: 'relative',
+                    '&:after': {
+                      content: '""',
+                      position: 'absolute',
+                      width: path === link.path ? '30%' : '0%',
+                      height: '2px',
+                      bottom: '4px',
+                      left: '35%',
+                      backgroundColor: 'primary.main',
+                      transition: 'width 0.25s ease-in-out',
+                    },
+                    '&:hover': {
+                      color: 'primary.main',
+                      backgroundColor: 'transparent',
+                      '&:after': {
+                        width: '30%',
+                      },
+                    },
+                  }}
+                >
                   {link.label}
                 </Button>
               </Link>
