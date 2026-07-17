@@ -1,0 +1,29 @@
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 40s linear infinite;
+  min-width: 200%;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
