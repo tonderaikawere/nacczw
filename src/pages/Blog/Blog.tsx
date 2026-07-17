@@ -13,7 +13,7 @@ const Blog: React.FC = () => {
   return (
     <Box sx={{ pt: '64px' }}>
       <Box sx={{ py: 12, backgroundColor: '#0F172A', color: '#ffffff', textAlign: 'center' }}>
-        <Typography variant="h2" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800 }}>
+        <Typography variant="h2" sx={{ fontFamily: '"Poppins", sans-serif', fontWeight: 800 }}>
           Blog & News
         </Typography>
       </Box>
