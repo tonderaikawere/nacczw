@@ -22,27 +22,31 @@ const theme = createTheme({
   typography: {
     fontFamily: '"Poppins", "Inter", sans-serif',
     h1: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Poppins", sans-serif',
       fontWeight: 700,
+      letterSpacing: '-0.02em',
     },
     h2: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Poppins", sans-serif',
       fontWeight: 700,
+      letterSpacing: '-0.02em',
     },
     h3: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Poppins", sans-serif',
       fontWeight: 700,
+      letterSpacing: '-0.01em',
     },
     h4: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Poppins", sans-serif',
       fontWeight: 700,
+      letterSpacing: '-0.01em',
     },
     h5: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Poppins", sans-serif',
       fontWeight: 700,
     },
     h6: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Poppins", sans-serif',
       fontWeight: 600,
     },
     subtitle1: {
