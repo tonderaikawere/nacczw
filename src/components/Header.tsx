@@ -21,9 +21,9 @@ const Header: React.FC = () => {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
-        backgroundColor: '#FFFFFF',
+        backgroundColor: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(8px)',
         boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)',
         borderBottom: '1px solid #E2E8F0',
       }}

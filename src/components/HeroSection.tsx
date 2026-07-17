@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
   ];
 
   return (
-    <Box sx={{ position: 'relative', height: '80vh', backgroundColor: '#0F172A', color: '#FFFFFF', display: 'flex', alignItems: 'center' }}>
+    <Box sx={{ position: 'relative', height: '100vh', backgroundColor: '#0F172A', color: '#FFFFFF', display: 'flex', alignItems: 'center' }}>
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
@@ -37,19 +37,19 @@ const HeroSection: React.FC = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'linear-gradient(to right, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.4) 100%)',
+          background: 'linear-gradient(to right, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.45) 100%)',
           zIndex: 1,
         }}
       />
-      <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2 }}>
-        <Box sx={{ maxWidth: '650px' }}>
-          <Typography variant="h2" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800, mb: 2 }}>
+      <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 2, pt: 8 }}>
+        <Box sx={{ maxWidth: '750px', px: { xs: 2, md: 4 } }}>
+          <Typography variant="h2" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800, mb: 3, fontSize: { xs: '2.5rem', md: '4rem' } }}>
             National Association of Christian Churches
           </Typography>
-          <Typography variant="body1" sx={{ mb: 4, color: '#CBD5E1' }}>
+          <Typography variant="body1" sx={{ mb: 5, color: '#CBD5E1', maxW: '600px' }}>
             A united faith-based church community fostering spiritual, social, and socio-economic growth in Zimbabwe.
           </Typography>
-          <Button variant="contained" onClick={() => navigate('/about')}>Learn More</Button>
+          <Button variant="contained" size="large" onClick={() => navigate('/about')}>Learn More</Button>
         </Box>
       </Container>
     </Box>
