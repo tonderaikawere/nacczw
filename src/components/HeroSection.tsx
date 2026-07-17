@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Button, Container } from '@mui/material';
+import { Box, Typography, Button, Container, Grid } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -12,6 +12,12 @@ const HeroSection: React.FC = () => {
     { img: '/images/hero2.png', alt: 'Hero 2' },
     { img: '/images/hero3.png', alt: 'Hero 3' },
     { img: '/images/hero4.png', alt: 'Hero 4' }
+  ];
+
+  const counters = [
+    { title: 'Community Events', value: '120+' },
+    { title: 'Volunteers Serving', value: '50+' },
+    { title: 'Years of Ministry', value: '15+' }
   ];
 
   return (
@@ -37,20 +43,40 @@ const HeroSection: React.FC = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'linear-gradient(to right, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.45) 100%)',
+          background: 'linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.5) 100%)',
           zIndex: 1,
         }}
       />
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 2, pt: 8 }}>
-        <Box sx={{ maxWidth: '750px', px: { xs: 2, md: 4 } }}>
-          <Typography variant="h2" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800, mb: 3, fontSize: { xs: '2.5rem', md: '4rem' } }}>
-            National Association of Christian Churches
-          </Typography>
-          <Typography variant="body1" sx={{ mb: 5, color: '#CBD5E1', maxW: '600px' }}>
-            A united faith-based church community fostering spiritual, social, and socio-economic growth in Zimbabwe.
-          </Typography>
-          <Button variant="contained" size="large" onClick={() => navigate('/about')}>Learn More</Button>
-        </Box>
+        <Grid container spacing={4} alignItems="center">
+          <Grid item xs={12} md={7}>
+            <Box sx={{ px: { xs: 2, md: 4 } }}>
+              <Typography variant="body2" sx={{ color: 'secondary.main', fontWeight: 800, mb: 2, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                Growing Together in Christ
+              </Typography>
+              <Typography variant="h1" sx={{ fontWeight: 800, mb: 3, fontSize: { xs: '2.5rem', md: '4rem' }, lineHeight: 1.15 }}>
+                JOIN OUR COMMUNITY OF FAITH TODAY
+              </Typography>
+              <Typography variant="body1" sx={{ mb: 5, color: '#CBD5E1', maxW: '600px' }}>
+                We are committed to sharing God's love through relationships, fellowship and opportunities to serve others. Whether you are new to faith or seeking a deeper connection, you will find guidance and encouragement.
+              </Typography>
+              <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+                <Button variant="contained" size="large" onClick={() => navigate('/contact')}>JOIN OUR CHURCH</Button>
+                <Button variant="outlined" color="inherit" size="large" onClick={() => navigate('/about')} sx={{ borderWidth: '2px', '&:hover': { borderWidth: '2px' } }}>GET STARTED</Button>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={5} sx={{ display: { xs: 'none', md: 'block' } }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', p: 4, borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }}>
+              {counters.map((ctr, idx) => (
+                <Box key={idx} sx={{ borderBottom: idx !== 2 ? '1px solid rgba(255,255,255,0.1)' : 'none', pb: idx !== 2 ? 2 : 0 }}>
+                  <Typography variant="h3" sx={{ color: 'secondary.main', fontWeight: 800 }}>{ctr.value}</Typography>
+                  <Typography variant="body2" sx={{ color: '#94A3B8', fontWeight: 600 }}>{ctr.title}</Typography>
+                </Box>
+              ))}
+            </Box>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
