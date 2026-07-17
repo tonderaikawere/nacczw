@@ -54,6 +54,22 @@ const HeroSection: React.FC = () => {
               </Box>
             </Box>
           </Grid>
+          <Grid item xs={12} md={5} sx={{ display: { xs: 'none', md: 'block' } }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', p: 4, borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }}>
+              <Box sx={{ borderBottom: '1px solid rgba(255,255,255,0.1)', pb: 2 }}>
+                <Typography variant="h3" sx={{ color: 'secondary.main', fontWeight: 800 }}>120+</Typography>
+                <Typography variant="body2" sx={{ color: '#CBD5E1', fontWeight: 600 }}>Community Events</Typography>
+              </Box>
+              <Box sx={{ borderBottom: '1px solid rgba(255,255,255,0.1)', pb: 2 }}>
+                <Typography variant="h3" sx={{ color: 'secondary.main', fontWeight: 800 }}>50+</Typography>
+                <Typography variant="body2" sx={{ color: '#CBD5E1', fontWeight: 600 }}>Volunteers Serving</Typography>
+              </Box>
+              <Box>
+                <Typography variant="h3" sx={{ color: 'secondary.main', fontWeight: 800 }}>15+</Typography>
+                <Typography variant="body2" sx={{ color: '#CBD5E1', fontWeight: 600 }}>Years of Ministry</Typography>
+              </Box>
+            </Box>
+          </Grid>
         </Grid>
       </Container>
     </Box>
