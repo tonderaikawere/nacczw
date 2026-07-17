@@ -78,13 +78,50 @@ const Header: React.FC = () => {
           <IconButton onClick={toggleDrawer} sx={{ display: { xs: 'block', md: 'none' } }}>
             <MenuIcon />
           </IconButton>
-          <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
-            <Box onClick={toggleDrawer} sx={{ width: 250, p: 2 }}>
+          <Drawer
+            anchor="right"
+            open={drawerOpen}
+            onClose={toggleDrawer}
+            sx={{
+              '& .MuiDrawer-paper': {
+                width: 280,
+                padding: '24px 16px',
+              },
+            }}
+          >
+            <Box
+              sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}
+              role="presentation"
+              onClick={toggleDrawer}
+              onKeyDown={toggleDrawer}
+            >
+              <Box sx={{ display: 'flex', justifyContent: 'flex-end', mb: 2 }}>
+                <IconButton onClick={toggleDrawer} sx={{ color: 'text.primary' }}>
+                  <CloseIcon />
+                </IconButton>
+              </Box>
               {navLinks.map((link) => (
-                <Link key={link.path} to={link.path} style={{ textDecoration: 'none', display: 'block' }}>
-                  <Button fullWidth sx={{ justifyContent: 'flex-start' }}>{link.label}</Button>
+                <Link key={link.path} to={link.path} style={{ textDecoration: 'none' }}>
+                  <Button
+                    fullWidth
+                    sx={{
+                      justifyContent: 'flex-start',
+                      color: path === link.path ? 'primary.main' : 'text.primary',
+                      fontWeight: 600,
+                      padding: '10px 16px',
+                      backgroundColor: path === link.path ? 'rgba(33, 128, 0, 0.08)' : 'transparent',
+                      '&:hover': { backgroundColor: 'rgba(33, 128, 0, 0.05)' }
+                    }}
+                  >
+                    {link.label}
+                  </Button>
                 </Link>
               ))}
+              <Link to="/donate" style={{ textDecoration: 'none', marginTop: '16px' }}>
+                <Button variant="contained" color="secondary" fullWidth sx={{ fontWeight: 700 }}>
+                  Donate
+                </Button>
+              </Link>
             </Box>
           </Drawer>
         </Toolbar>
