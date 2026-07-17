@@ -43,7 +43,7 @@ const AboutSection: React.FC = () => {
                   transition: 'transform 0.3s ease',
                   '&:hover': { transform: 'translate(-50%, -50%) scale(1.1)' }
                 }}
-                onClick={() => alert('Opening video player...')}
+                className="play-glow-ripple" onClick={() => alert('Opening video player...')}
               >
                 <PlayArrowIcon sx={{ fontSize: '40px' }} />
               </Box>
