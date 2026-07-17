@@ -30,6 +30,17 @@ const HeroSection: React.FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <Box
+        sx={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          background: 'linear-gradient(to right, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.4) 100%)',
+          zIndex: 1,
+        }}
+      />
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2 }}>
         <Box sx={{ maxWidth: '650px' }}>
           <Typography variant="h2" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800, mb: 2 }}>
