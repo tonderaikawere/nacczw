@@ -9,7 +9,7 @@ const events = [
 
 const BlogSection: React.FC = () => {
   return (
-    <Box sx={{ py: 8, backgroundColor: '#F8FAFC' }}>
+    <Box sx={{ py: 12, backgroundColor: '#F8FAFC' }}>
       <Container maxWidth="lg">
         <Box sx={{ mb: 6, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 2 }}>
           <Box>

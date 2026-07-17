@@ -16,7 +16,7 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <Box sx={{ py: 8, backgroundColor: '#ffffff' }}>
+    <Box sx={{ py: 12, backgroundColor: '#ffffff' }}>
       <Container maxWidth="md">
         <Box sx={{ mb: 6, textAlign: 'center' }}>
           <Typography variant="h6" color="primary" sx={{ fontWeight: 700, mb: 1, textTransform: 'uppercase' }}>

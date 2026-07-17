@@ -17,7 +17,7 @@ const ServicesSection: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ py: 8, backgroundColor: '#ffffff' }}>
+    <Box sx={{ py: 12, backgroundColor: '#ffffff' }}>
       <Container maxWidth="lg">
         <Box sx={{ mb: 6, textAlign: 'center' }}>
           <Typography variant="h6" color="primary" sx={{ fontWeight: 700, mb: 1, textTransform: 'uppercase' }}>
@@ -27,7 +27,7 @@ const ServicesSection: React.FC = () => {
             Worship & Ministry Programs
           </Typography>
         </Box>
-        <Grid container spacing={3}>
+        <Grid container spacing={4}>
           {servicesList.map((service) => (
             <Grid item xs={12} sm={6} md={3} key={service.id}>
               <Card

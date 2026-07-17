@@ -6,7 +6,7 @@ const AboutSection: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ py: 8, backgroundColor: '#F8FAFC' }}>
+    <Box sx={{ py: 12, backgroundColor: '#F8FAFC' }}>
       <Container maxWidth="lg">
         <Grid container spacing={6} alignItems="center">
           <Grid item xs={12} md={6}>
