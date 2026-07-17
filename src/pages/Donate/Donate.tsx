@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 
 const Donation: React.FC = () => {
   return (
-    <Box sx={{ pt: '64px' }}>
+    <Box sx={{ pt: '80px' }}>
       <Box sx={{ py: 12, backgroundColor: '#0F172A', color: '#ffffff', textAlign: 'center' }}>
         <Typography variant="h2" sx={{ fontFamily: '"Poppins", sans-serif', fontWeight: 800 }}>
           Donate & Support
