@@ -27,3 +27,17 @@
   font-size: 1.1rem;
   letter-spacing: 0.05em;
 }
+
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(229, 169, 0, 0.4), 0 0 0 10px rgba(229, 169, 0, 0.3), 0 0 0 35px rgba(229, 169, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(229, 169, 0, 0.3), 0 0 0 35px rgba(229, 169, 0, 0.2), 0 0 0 60px rgba(229, 169, 0, 0);
+  }
+}
+
+.play-glow-ripple {
+  animation: ripple 1.8s infinite linear !important;
+}
