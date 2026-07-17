@@ -1,51 +1,43 @@
 import React from 'react';
-import { Box, Typography, Button, Container, Grid, Card, CardContent } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Box, Typography, Button, Container, Grid, Card, CardMedia, CardContent } from '@mui/material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { useNavigate } from 'react-router-dom';
 
-const events = [
-  { title: "Pastors Training Summit", tag: "Training", date: "Aug 15, 2024", summary: "A comprehensive training session for pastors to enhance leadership." },
-  { title: "Visit to Felabusi Village", tag: "Outreach", date: "Jul 20, 2024", summary: "We visited Felabusi Village to donate food supplies and cattle support." },
+const sermonsList = [
+  { title: "Walking by Faith Every Day", speaker: "John Doe", date: "Aug 15, 2024", img: "/images/img5.png" },
+  { title: "Growing Strong in Your Faith", speaker: "Michael Anderson", date: "Jul 20, 2024", img: "/images/img6.png" },
+  { title: "Hearing God's Voice Clearly", speaker: "David Williams", date: "May 04, 2024", img: "/images/img7.png" }
 ];
 
 const BlogSection: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ py: 12, backgroundColor: '#F8FAFC' }}>
-      <Container maxWidth="lg">
-        <Box sx={{ mb: 6, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 2 }}>
+      <Container maxWidth="xl">
+        <Box sx={{ mb: 8, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 2 }}>
           <Box>
-            <Typography variant="h6" color="primary" sx={{ fontWeight: 700, mb: 1, textTransform: 'uppercase' }}>
-              Latest Updates
+            <Typography variant="body2" sx={{ color: 'secondary.main', fontWeight: 800, mb: 1, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              Featured Sermons
             </Typography>
-            <Typography variant="h3" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800 }}>
-              News & Community Events
+            <Typography variant="h2" sx={{ fontSize: { xs: '2.2rem', md: '3.2rem' } }}>
+              LISTEN TO OUR INSPIRING SERMONS TODAY
             </Typography>
           </Box>
-          <Button variant="contained" component={Link} to="/blog">View All News</Button>
+          <Button variant="contained" onClick={() => navigate('/blog')}>View All Sermons</Button>
         </Box>
         <Grid container spacing={4}>
-          {events.map((event, idx) => (
-            <Grid item xs={12} md={6} key={idx}>
-              <Card
-                sx={{
-                  borderRadius: '16px',
-                  boxShadow: '0 4px 20px rgba(0,0,0,0.02)',
-                  border: '1px solid #E2E8F0',
-                  transition: 'transform 0.3s ease',
-                  '&:hover': {
-                    transform: 'translateY(-5px)',
-                    boxShadow: '0 10px 25px rgba(0,0,0,0.05)',
-                  }
-                }}
-              >
-                <CardContent>
-                  <Box sx={{ display: 'flex', gap: 1.5, alignItems: 'center', mb: 2 }}>
-                    <Box sx={{ backgroundColor: 'rgba(33,128,0,0.08)', color: 'primary.main', px: 2, py: 0.5, borderRadius: '12px', fontSize: '0.75rem', fontWeight: 700 }}>
-                      {event.tag}
-                    </Box>
-                    <Typography variant="caption" sx={{ color: 'text.secondary' }}>{event.date}</Typography>
+          {sermonsList.map((s, idx) => (
+            <Grid item xs={12} md={4} key={idx}>
+              <Card sx={{ border: '1px solid #E2E8F0', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <CardMedia component="img" height="230" image={s.img} alt={s.title} />
+                <CardContent sx={{ p: 4, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                  <Typography variant="caption" sx={{ color: 'secondary.main', fontWeight: 800, mb: 1, textTransform: 'uppercase' }}>DISCIPLESHIP</Typography>
+                  <Typography variant="h4" sx={{ fontWeight: 800, mb: 2, fontSize: '1.3rem' }}>{s.title}</Typography>
+                  <Box sx={{ display: 'flex', justifyContent: 'space-between', color: 'text.secondary', fontSize: '0.85rem', mt: 'auto', pt: 2, borderTop: '1px solid #E2E8F0' }}>
+                    <Typography variant="caption" sx={{ fontWeight: 600 }}>By: {s.speaker}</Typography>
+                    <Typography variant="caption" sx={{ fontWeight: 600 }}>{s.date}</Typography>
                   </Box>
-                  <Typography variant="h5" sx={{ fontWeight: 700, mb: 1.5 }}>{event.title}</Typography>
-                  <Typography variant="body2">{event.summary}</Typography>
                 </CardContent>
               </Card>
             </Grid>
