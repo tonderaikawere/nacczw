@@ -11,8 +11,8 @@ const posts = [
 
 const Blog: React.FC = () => {
   return (
-    <Box>
-      <Box sx={{ py: 8, backgroundColor: '#0F172A', color: '#ffffff', textAlign: 'center' }}>
+    <Box sx={{ pt: '64px' }}>
+      <Box sx={{ py: 12, backgroundColor: '#0F172A', color: '#ffffff', textAlign: 'center' }}>
         <Typography variant="h2" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800 }}>
           Blog & News
         </Typography>
