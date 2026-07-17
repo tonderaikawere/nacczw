@@ -30,7 +30,19 @@ const ServicesSection: React.FC = () => {
         <Grid container spacing={3}>
           {servicesList.map((service) => (
             <Grid item xs={12} sm={6} md={3} key={service.id}>
-              <Card>
+              <Card
+                sx={{
+                  height: '100%',
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 15px rgba(0, 0, 0, 0.02)',
+                  border: '1px solid #E2E8F0',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                  '&:hover': {
+                    transform: 'translateY(-6px)',
+                    boxShadow: '0 10px 25px rgba(33, 128, 0, 0.08)',
+                  }
+                }}
+              >
                 <CardContent>
                   <Typography variant="h5" sx={{ fontWeight: 700, mb: 1 }}>{service.title}</Typography>
                   <Typography variant="caption" sx={{ color: 'secondary.main', fontWeight: 700 }}>{service.time}</Typography>
@@ -39,6 +51,9 @@ const ServicesSection: React.FC = () => {
             </Grid>
           ))}
         </Grid>
+        <Box sx={{ mt: 6, display: 'flex', justifyContent: 'center', gap: 2 }}>
+          <Button variant="contained" onClick={() => navigate('/services')}>View All Services</Button>
+        </Box>
       </Container>
     </Box>
   );
