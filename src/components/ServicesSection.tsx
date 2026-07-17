@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
-import { Box, Typography, Button, Container, Grid, Card, CardContent } from '@mui/material';
+import React from 'react';
+import { Box, Typography, Button, Container, Grid, Card, CardMedia, CardContent } from '@mui/material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useNavigate } from 'react-router-dom';
 
-const servicesList = [
-  { id: 1, title: 'Morning Prayer', time: '6:00 AM' },
-  { id: 2, title: 'Prayer Groups', time: 'Wednesdays 7:00 PM' },
-  { id: 3, title: 'Sunday Services', time: '9:00 AM & 11:00 AM' },
-  { id: 4, title: 'Marriage Counseling', time: 'By Appointment' },
-  { id: 5, title: 'Community Outreach', time: 'Saturdays 10:00 AM' },
-  { id: 6, title: 'Bible Study', time: 'Fridays 7:00 PM' },
-  { id: 7, title: 'Youth Programs', time: 'Sundays 3:00 PM' },
-  { id: 8, title: 'Baptisms', time: 'Sundays 3:00 PM' },
+const ministriesList = [
+  { title: "Children's Ministry", img: "/images/img2.png", desc: "Teaching children God's word through interactive, fun lessons." },
+  { title: "Youth Ministry", img: "/images/img3.png", desc: "Empowering teenagers to connect, grow and build faith together." },
+  { title: "Women's Ministry", img: "/images/img4.png", desc: "A supportive community of women dedicated to prayer and growth." }
 ];
 
 const ServicesSection: React.FC = () => {
@@ -18,42 +14,38 @@ const ServicesSection: React.FC = () => {
 
   return (
     <Box sx={{ py: 12, backgroundColor: '#ffffff' }}>
-      <Container maxWidth="lg">
-        <Box sx={{ mb: 6, textAlign: 'center' }}>
-          <Typography variant="h6" color="primary" sx={{ fontWeight: 700, mb: 1, textTransform: 'uppercase' }}>
-            Our Services
+      <Container maxWidth="xl">
+        <Box sx={{ mb: 8, textAlign: 'center' }}>
+          <Typography variant="body2" sx={{ color: 'secondary.main', fontWeight: 800, mb: 1, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            Our Ministries
           </Typography>
-          <Typography variant="h3" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800 }}>
-            Worship & Ministry Programs
+          <Typography variant="h2" sx={{ mb: 2, fontSize: { xs: '2.2rem', md: '3.2rem' } }}>
+            OUR MINISTRIES FOR WORSHIP, GROWTH AND SERVICE
           </Typography>
         </Box>
         <Grid container spacing={4}>
-          {servicesList.map((service) => (
-            <Grid item xs={12} sm={6} md={3} key={service.id}>
-              <Card
-                sx={{
-                  height: '100%',
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 15px rgba(0, 0, 0, 0.02)',
-                  border: '1px solid #E2E8F0',
-                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                  '&:hover': {
-                    transform: 'translateY(-6px)',
-                    boxShadow: '0 10px 25px rgba(33, 128, 0, 0.08)',
-                  }
-                }}
-              >
-                <CardContent>
-                  <Typography variant="h5" sx={{ fontWeight: 700, mb: 1 }}>{service.title}</Typography>
-                  <Typography variant="caption" sx={{ color: 'secondary.main', fontWeight: 700 }}>{service.time}</Typography>
+          {ministriesList.map((m, idx) => (
+            <Grid item xs={12} md={4} key={idx}>
+              <Card sx={{ border: '1px solid #E2E8F0', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <CardMedia component="img" height="250" image={m.img} alt={m.title} sx={{ transition: 'transform 0.5s ease', '&:hover': { transform: 'scale(1.05)' } }} />
+                <CardContent sx={{ p: 4, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                  <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 800, mb: 1, textTransform: 'uppercase' }}>MINISTRY</Typography>
+                  <Typography variant="h4" sx={{ fontWeight: 800, mb: 2, fontSize: '1.4rem' }}>{m.title}</Typography>
+                  <Typography variant="body2" color="text.secondary" sx={{ mb: 3, flexGrow: 1 }}>{m.desc}</Typography>
+                  <Button
+                    variant="text"
+                    color="primary"
+                    onClick={() => navigate('/services')}
+                    endIcon={<ArrowForwardIcon />}
+                    sx={{ alignSelf: 'flex-start', p: 0, fontWeight: 700 }}
+                  >
+                    Read More
+                  </Button>
                 </CardContent>
               </Card>
             </Grid>
           ))}
         </Grid>
-        <Box sx={{ mt: 6, display: 'flex', justifyContent: 'center', gap: 2 }}>
-          <Button variant="contained" onClick={() => navigate('/services')}>View All Services</Button>
-        </Box>
       </Container>
     </Box>
   );
