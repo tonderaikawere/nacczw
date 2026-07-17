@@ -25,9 +25,26 @@ const BlogSection: React.FC = () => {
         <Grid container spacing={4}>
           {events.map((event, idx) => (
             <Grid item xs={12} md={6} key={idx}>
-              <Card>
+              <Card
+                sx={{
+                  borderRadius: '16px',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.02)',
+                  border: '1px solid #E2E8F0',
+                  transition: 'transform 0.3s ease',
+                  '&:hover': {
+                    transform: 'translateY(-5px)',
+                    boxShadow: '0 10px 25px rgba(0,0,0,0.05)',
+                  }
+                }}
+              >
                 <CardContent>
-                  <Typography variant="h5">{event.title}</Typography>
+                  <Box sx={{ display: 'flex', gap: 1.5, alignItems: 'center', mb: 2 }}>
+                    <Box sx={{ backgroundColor: 'rgba(33,128,0,0.08)', color: 'primary.main', px: 2, py: 0.5, borderRadius: '12px', fontSize: '0.75rem', fontWeight: 700 }}>
+                      {event.tag}
+                    </Box>
+                    <Typography variant="caption" sx={{ color: 'text.secondary' }}>{event.date}</Typography>
+                  </Box>
+                  <Typography variant="h5" sx={{ fontWeight: 700, mb: 1.5 }}>{event.title}</Typography>
                   <Typography variant="body2">{event.summary}</Typography>
                 </CardContent>
               </Card>
