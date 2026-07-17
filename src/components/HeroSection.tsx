@@ -1,41 +1,29 @@
 import React from 'react';
 import { Box, Typography, Button, Container, Grid } from '@mui/material';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
 import { useNavigate } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
-  const slides = [
-    { img: '/images/hero.png', alt: 'Hero 1' },
-    { img: '/images/hero2.png', alt: 'Hero 2' },
-    { img: '/images/hero3.png', alt: 'Hero 3' },
-    { img: '/images/hero4.png', alt: 'Hero 4' }
-  ];
-
-  const counters = [
-    { title: 'Community Events', value: '120+' },
-    { title: 'Volunteers Serving', value: '50+' },
-    { title: 'Years of Ministry', value: '15+' }
-  ];
 
   return (
-    <Box sx={{ position: 'relative', height: '100vh', backgroundColor: '#0F172A', color: '#FFFFFF', display: 'flex', alignItems: 'center' }}>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={0}
-        autoplay={{ delay: 6000, disableOnInteraction: false }}
-        loop={true}
-        modules={[Autoplay]}
-        style={{ position: 'absolute', width: '100%', height: '100%', zIndex: 0 }}
+    <Box sx={{ position: 'relative', height: '100vh', backgroundColor: '#0F172A', color: '#FFFFFF', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          top: 0,
+          left: 0,
+          zIndex: 0
+        }}
       >
-        {slides.map((slide, idx) => (
-          <SwiperSlide key={idx}>
-            <Box component="img" src={slide.img} alt={slide.alt} sx={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <source src="https://demo.awaikenthemes.com/assets/videos/emanu-hero-video.mp4" type="video/mp4" />
+      </video>
       <Box
         sx={{
           position: 'absolute',
@@ -43,7 +31,7 @@ const HeroSection: React.FC = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.5) 100%)',
+          background: 'linear-gradient(to right, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.45) 100%)',
           zIndex: 1,
         }}
       />
@@ -64,16 +52,6 @@ const HeroSection: React.FC = () => {
                 <Button variant="contained" size="large" onClick={() => navigate('/contact')}>JOIN OUR CHURCH</Button>
                 <Button variant="outlined" color="inherit" size="large" onClick={() => navigate('/about')} sx={{ borderWidth: '2px', '&:hover': { borderWidth: '2px' } }}>GET STARTED</Button>
               </Box>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={5} sx={{ display: { xs: 'none', md: 'block' } }}>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', p: 4, borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }}>
-              {counters.map((ctr, idx) => (
-                <Box key={idx} sx={{ borderBottom: idx !== 2 ? '1px solid rgba(255,255,255,0.1)' : 'none', pb: idx !== 2 ? 2 : 0 }}>
-                  <Typography variant="h3" sx={{ color: 'secondary.main', fontWeight: 800 }}>{ctr.value}</Typography>
-                  <Typography variant="body2" sx={{ color: '#94A3B8', fontWeight: 600 }}>{ctr.title}</Typography>
-                </Box>
-              ))}
             </Box>
           </Grid>
         </Grid>
