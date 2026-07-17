@@ -38,7 +38,32 @@ const Header: React.FC = () => {
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {navLinks.map((link) => (
               <Link key={link.path} to={link.path} style={{ textDecoration: 'none' }}>
-                <Button sx={{ color: path === link.path ? 'primary.main' : 'text.secondary', mx: 1 }}>
+                <Button
+                  sx={{
+                    color: path === link.path ? 'primary.main' : 'text.secondary',
+                    mx: 1.5,
+                    fontSize: '0.95rem',
+                    fontWeight: 600,
+                    position: 'relative',
+                    '&:after': {
+                      content: '""',
+                      position: 'absolute',
+                      width: path === link.path ? '50%' : '0%',
+                      height: '2px',
+                      bottom: '2px',
+                      left: '25%',
+                      backgroundColor: 'primary.main',
+                      transition: 'width 0.25s ease-in-out',
+                    },
+                    '&:hover': {
+                      color: 'primary.main',
+                      backgroundColor: 'transparent',
+                      '&:after': {
+                        width: '50%',
+                      },
+                    },
+                  }}
+                >
                   {link.label}
                 </Button>
               </Link>
@@ -50,8 +75,20 @@ const Header: React.FC = () => {
           <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
             <Box onClick={toggleDrawer} sx={{ width: 250, p: 2 }}>
               {navLinks.map((link) => (
-                <Link key={link.path} to={link.path} style={{ textDecoration: 'none', display: 'block' }}>
-                  <Button fullWidth sx={{ justifyContent: 'flex-start' }}>{link.label}</Button>
+                <Link key={link.path} to={link.path} style={{ textDecoration: 'none', display: 'block', marginBottom: '8px' }}>
+                  <Button
+                    fullWidth
+                    sx={{
+                      justifyContent: 'flex-start',
+                      color: path === link.path ? 'primary.main' : 'text.primary',
+                      fontWeight: 600,
+                      backgroundColor: path === link.path ? 'rgba(33, 128, 0, 0.08)' : 'transparent',
+                      padding: '10px 16px',
+                      '&:hover': { backgroundColor: 'rgba(33, 128, 0, 0.05)' }
+                    }}
+                  >
+                    {link.label}
+                  </Button>
                 </Link>
               ))}
             </Box>
