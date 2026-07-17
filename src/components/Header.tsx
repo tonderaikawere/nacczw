@@ -24,44 +24,35 @@ const Header: React.FC = () => {
       position="fixed"
       sx={{
         backgroundColor: 'rgba(255, 255, 255, 0.95)',
-        backdropFilter: 'blur(8px)',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)',
-        borderBottom: '1px solid #E2E8F0',
+        backdropFilter: 'blur(12px)',
+        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.03)',
+        borderBottom: '1px solid rgba(226, 232, 240, 0.8)',
+        borderTop: '4px solid #E5A900', // Gold top-line typical of Emanu header
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between', height: '80px' }}>
+          {/* Logo */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Link to="/">
-              <img src="/images/logo.png" alt="NACC Logo" style={{ height: '45px' }} />
+              <img src="/images/logo.png" alt="NACC Logo" style={{ height: '48px' }} />
             </Link>
           </Box>
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+
+          {/* Centered Navigation */}
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
             {navLinks.map((link) => (
               <Link key={link.path} to={link.path} style={{ textDecoration: 'none' }}>
                 <Button
                   sx={{
-                    color: path === link.path ? 'primary.main' : 'text.secondary',
-                    mx: 1.5,
+                    color: path === link.path ? 'primary.main' : 'text.primary',
                     fontSize: '0.95rem',
-                    fontWeight: 600,
+                    fontWeight: 700,
+                    px: 2,
                     position: 'relative',
-                    '&:after': {
-                      content: '""',
-                      position: 'absolute',
-                      width: path === link.path ? '30%' : '0%',
-                      height: '2px',
-                      bottom: '4px',
-                      left: '35%',
-                      backgroundColor: 'primary.main',
-                      transition: 'width 0.25s ease-in-out',
-                    },
                     '&:hover': {
                       color: 'primary.main',
                       backgroundColor: 'transparent',
-                      '&:after': {
-                        width: '30%',
-                      },
                     },
                   }}
                 >
@@ -70,14 +61,35 @@ const Header: React.FC = () => {
               </Link>
             ))}
           </Box>
+
+          {/* Right CTA */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Link to="/donate" style={{ textDecoration: 'none' }}>
-              <Button variant="contained" color="secondary">Donate</Button>
+              <Button
+                variant="contained"
+                color="secondary"
+                sx={{
+                  fontWeight: 700,
+                  fontSize: '0.9rem',
+                  borderRadius: 1,
+                  px: 3,
+                  py: 1,
+                }}
+              >
+                Donation
+              </Button>
             </Link>
           </Box>
-          <IconButton onClick={toggleDrawer} sx={{ display: { xs: 'block', md: 'none' } }}>
-            <MenuIcon />
+
+          {/* Mobile hamburger */}
+          <IconButton
+            onClick={toggleDrawer}
+            sx={{ display: { xs: 'block', md: 'none' }, color: 'text.primary' }}
+          >
+            {drawerOpen ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
+
+          {/* Mobile Drawer */}
           <Drawer
             anchor="right"
             open={drawerOpen}
@@ -119,7 +131,7 @@ const Header: React.FC = () => {
               ))}
               <Link to="/donate" style={{ textDecoration: 'none', marginTop: '16px' }}>
                 <Button variant="contained" color="secondary" fullWidth sx={{ fontWeight: 700 }}>
-                  Donate
+                  Donation
                 </Button>
               </Link>
             </Box>
