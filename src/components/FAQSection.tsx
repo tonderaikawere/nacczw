@@ -10,7 +10,8 @@ const faqItems = [
   { question: "Does NACC offer certification and licenses to pastors?", answer: "Absolutely. NACC coordinates with national regulatory authorities to certify eligible pastors, register marriage officers, and issue ordination credentials to qualifying leaders." },
   { question: "How does NACC support local community development?", answer: "NACC sponsors agricultural projects, cattle medication distribution, primary healthcare checkups, and youth skills training workshops in remote districts across Zimbabwe." },
   { question: "Can an international ministry affiliate with NACC?", answer: "Yes. NACC welcomes international partner ministries under our global fellowship scheme, allowing cross-border training summits and cooperative missions projects." },
-  { question: "How does NACC handle pastoral ordination conflicts?", answer: "We maintain an independent Arbitration Committee comprised of senior bishops and board trustees to mediate leadership disputes and ensure biblical reconciliation." }
+  { question: "How does NACC handle pastoral ordination conflicts?", answer: "We maintain an independent Arbitration Committee comprised of senior bishops and board trustees to mediate leadership disputes and ensure biblical reconciliation." },
+  { question: "Is there a youth sports league run by NACC?", answer: "Yes. The NACC Youth Fellowship coordinates regional soccer and netball tournaments, promoting health, discipline, and unity among young believers." }
 ];
 
 const FAQSection: React.FC = () => {
