@@ -20,6 +20,13 @@ const Blog: React.FC = () => {
         </Typography>
       </Box>
       <Container maxWidth="lg" sx={{ py: 8 }}>
+        <Box sx={{ display: 'flex', gap: 2, mb: 4, flexWrap: 'wrap', justifyContent: 'center' }}>
+          {["All", "Outreach", "Training", "Fellowship"].map((cat) => (
+            <Button key={cat} variant="outlined" color="primary" sx={{ borderRadius: 1 }}>
+              {cat}
+            </Button>
+          ))}
+        </Box>
         <Grid container spacing={4}>
           {allPosts.map((post, index) => (
             <Grid item xs={12} md={6} key={index}>
