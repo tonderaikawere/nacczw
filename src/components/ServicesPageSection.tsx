@@ -196,9 +196,10 @@ const ServicesPageSection: React.FC = () => {
             variant="outlined"
           />
         </DialogContent>
-        <DialogActions>
+        <DialogActions sx={{ px: 3, pb: 3 }}>
           <Button onClick={handleClose} sx={{ color: '#218000' }}>Cancel</Button>
-          <Button variant="contained" sx={{ backgroundColor: '#218000' }}>Submit</Button>
+          <Button variant="contained" color="secondary" onClick={handleClose}>Submit</Button>
+          
         </DialogActions>
       </Dialog>
     </Box>
