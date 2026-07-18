@@ -30,7 +30,7 @@ const About: React.FC = () => {
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
               <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>1. The Holy Scriptures</Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We believe the Bible is the inspired, authoritative, and infallible Word of God, serving as our ultimate rule of faith and conduct.</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We believe the Bible is the inspired, authoritative, and infallible Word of God, serving as our ultimate rule of faith and conduct. Referencing 2 Timothy 3:16 and Psalm 119:105 to guide our daily walk.</Typography>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>2. Spiritual Unity & Fellowship</Typography>
