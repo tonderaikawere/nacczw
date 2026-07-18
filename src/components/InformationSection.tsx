@@ -6,7 +6,7 @@ const InformationSection: React.FC = () => {
     <Box sx={{ py: 10, backgroundColor: '#218000', color: '#FFFFFF', borderTop: '4px solid #E5A900' }}>
       <Container maxWidth="xl">
         <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Harare Office (HQ)</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>45 Samora Machel Ave, Harare</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 242 756401</Typography>
