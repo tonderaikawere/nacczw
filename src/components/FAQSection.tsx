@@ -8,7 +8,8 @@ const faqItems = [
   { question: "How can my church become a member of NACC?", answer: "Churches can easily request membership information by contacting our administration office, leaving a message on our contact page, or filling out a physical application." },
   { question: "Are there annual membership subscription fees?", answer: "Yes, member churches contribute a nominal annual subscription fee which helps fund pastoral training workshops, administrative overheads, and rural emergency relief." },
   { question: "Does NACC offer certification and licenses to pastors?", answer: "Absolutely. NACC coordinates with national regulatory authorities to certify eligible pastors, register marriage officers, and issue ordination credentials to qualifying leaders." },
-  { question: "How does NACC support local community development?", answer: "NACC sponsors agricultural projects, cattle medication distribution, primary healthcare checkups, and youth skills training workshops in remote districts across Zimbabwe." }
+  { question: "How does NACC support local community development?", answer: "NACC sponsors agricultural projects, cattle medication distribution, primary healthcare checkups, and youth skills training workshops in remote districts across Zimbabwe." },
+  { question: "Can an international ministry affiliate with NACC?", answer: "Yes. NACC welcomes international partner ministries under our global fellowship scheme, allowing cross-border training summits and cooperative missions projects." }
 ];
 
 const FAQSection: React.FC = () => {
