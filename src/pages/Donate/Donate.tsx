@@ -69,7 +69,7 @@ const Donation: React.FC = () => {
         </Box>
         <Box sx={{ mt: 6, p: 4, backgroundColor: '#FFFFFF', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
           <Typography variant="h5" sx={{ fontWeight: 800, mb: 3 }}>How Your Donations Are Allocated</Typography>
-          <Typography variant="body2" sx={{ color: 'text.secondary', display: 'block', mb: 1 }}><strong>40% - Community Welfare & Disaster Support:</strong> Food aid, sanitation kits, and emergency logistics.</Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', display: 'block', mb: 1 }}><strong>40% - Community Welfare & Disaster Support:</strong> Food aid, sanitation kits, and emergency logistics. Supporting local community initiatives.</Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', display: 'block', mb: 1 }}><strong>30% - Agricultural & Skills Training:</strong> Seeds, livestock medication, and pastor summit venues.</Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', display: 'block', mb: 1 }}><strong>20% - Administrative Coordination:</strong> Head office maintenance, branch registrations, and legal audits.</Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}><strong>10% - Youth Sports & Fellowship:</strong> Regional tournaments kits and educational materials.</Typography>
