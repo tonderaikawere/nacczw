@@ -30,7 +30,7 @@ const Blog: React.FC = () => {
         <Grid container spacing={4}>
           {allPosts.map((post, index) => (
             <Grid item xs={12} md={6} key={index}>
-              <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', borderRadius: '12px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', borderRadius: '8px', borderLeft: '4px solid #218000', transition: 'transform 0.3s ease', '&:hover': { transform: 'translateY(-5px)', boxShadow: '0 8px 30px rgba(0,0,0,0.05)' }, height: '100%', display: 'flex', flexDirection: 'column' }}>
                 <CardContent sx={{ p: 4, flexGrow: 1 }}>
                   <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
                     <Typography variant="caption" sx={{ color: 'secondary.main', fontWeight: 800 }}>{post.tag}</Typography>
