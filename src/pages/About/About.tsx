@@ -67,6 +67,7 @@ const About: React.FC = () => {
               <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', textAlign: 'center', p: 3 }}>
                 <Typography variant="h6" sx={{ fontWeight: 700 }}>Deaconess R. Gumbo</Typography>
                 <Typography variant="caption" color="text.secondary">National Treasurer</Typography>
+                <Typography variant="body2" sx={{ mt: 1, fontSize: '0.8rem', color: 'text.secondary' }}>Managing fund allocations, annual subscriptions audits, and financial reporting.</Typography>
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
