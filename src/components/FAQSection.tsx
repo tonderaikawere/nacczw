@@ -5,7 +5,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const faqItems = [
   { question: "What is NACC?", answer: "The National Association of Christian Churches (NACC) is a collective of Christian churches working together to promote fellowship, unity, and support community development initiatives across Zimbabwe." },
   { question: "Where is the NACC headquartered?", answer: "The NACC main headquarters is based in Harare, Zimbabwe, with branches and regional partner organizations operational in multiple cities." },
-  { question: "How can my church become a member of NACC?", answer: "Churches can easily request membership information by contacting our administration office, leaving a message on our contact page, or filling out a physical application." }
+  { question: "How can my church become a member of NACC?", answer: "Churches can easily request membership information by contacting our administration office, leaving a message on our contact page, or filling out a physical application." },
+  { question: "Are there annual membership subscription fees?", answer: "Yes, member churches contribute a nominal annual subscription fee which helps fund pastoral training workshops, administrative overheads, and rural emergency relief." },
+  { question: "Does NACC offer certification and licenses to pastors?", answer: "Absolutely. NACC coordinates with national regulatory authorities to certify eligible pastors, register marriage officers, and issue ordination credentials to qualifying leaders." },
+  { question: "How does NACC support local community development?", answer: "NACC sponsors agricultural projects, cattle medication distribution, primary healthcare checkups, and youth skills training workshops in remote districts across Zimbabwe." }
 ];
 
 const FAQSection: React.FC = () => {
