@@ -44,6 +44,7 @@ const Blog: React.FC = () => {
                   <Typography variant="h4" sx={{ fontWeight: 800, mb: 2, fontSize: '1.5rem' }}>{post.title}</Typography>
                   <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>{post.body}</Typography>
                   <Typography variant="caption" sx={{ display: 'block', mt: 'auto', fontWeight: 600, color: 'primary.main' }}>Speaker: {post.speaker}</Typography>
+                  <Typography variant="button" sx={{ display: 'block', mt: 2, fontSize: '0.8rem', color: 'secondary.main', cursor: 'pointer' }}>Read Full Report &rarr;</Typography>
                 </CardContent>
               </Card>
             </Grid>
