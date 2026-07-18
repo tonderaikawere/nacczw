@@ -74,6 +74,16 @@ const About: React.FC = () => {
             </Grid>
           </Grid>
         </Box>
+        <Box sx={{ mt: 8 }}>
+          <Typography variant="h4" sx={{ fontWeight: 800, mb: 3, color: 'primary.main' }}>Our Departments & Leagues</Typography>
+          <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3 }}>
+            To efficiently manage the diverse community support services, NACC operates through several structured departments:
+          </Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', display: 'block', mb: 1 }}><strong>1. NACC Women's League:</strong> Empowering women through fellowship, prayer meetings, and small scale trade classes.</Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', display: 'block', mb: 1 }}><strong>2. NACC Youth Fellowship:</strong> Nurturing character and leadership skills in youth through bible camps and community cleanup outreaches.</Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', display: 'block', mb: 1 }}><strong>3. Agricultural & Livestock Projects:</strong> Providing training in cattle maintenance, farming techniques, and climate adaptation in rural villages.</Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', display: 'block' }}><strong>4. Welfare & Disaster Support:</strong> Coordinating food relief, medicine kits, and welfare packages during national emergencies.</Typography>
+        </Box>
       </Container>
       <ContactSection />
       <InformationSection />
