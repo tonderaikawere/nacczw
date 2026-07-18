@@ -41,3 +41,19 @@
 .play-glow-ripple {
   animation: ripple 1.8s infinite linear !important;
 }
+
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #218000;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1b6600;
+}
