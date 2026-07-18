@@ -39,6 +39,22 @@ const Donation: React.FC = () => {
             </Card>
           </Grid>
         </Grid>
+        <Box sx={{ mt: 8, p: 4, backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
+          <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, textAlign: 'center' }}>Giving Impact Calculator</Typography>
+          <Typography variant="body2" sx={{ textAlign: 'center', mb: 4, color: 'text.secondary' }}>Select or enter a donation amount (USD) to see the potential impact in our rural missions.</Typography>
+          <Grid container spacing={3} justifyContent="center">
+            {[20, 50, 100, 250].map((amt) => (
+              <Grid item key={amt}>
+                <Button variant="outlined" color="primary" sx={{ px: 4, py: 1.5, fontWeight: 700 }}>
+                  ${amt} USD
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          <Typography variant="body1" sx={{ mt: 4, textAlign: 'center', fontWeight: 700, color: 'primary.main' }}>
+            A contribution of $50 USD funds 1 complete Agricultural Training Pack for a small farmer.
+          </Typography>
+        </Box>
       </Container>
       <ContactSection />
       <InformationSection />
