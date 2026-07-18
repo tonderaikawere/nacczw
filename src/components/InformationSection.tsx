@@ -3,26 +3,26 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 
 const InformationSection: React.FC = () => {
   return (
-    <Box sx={{ py: 8, backgroundColor: '#218000', color: '#FFFFFF' }}>
-      <Container maxWidth="lg">
+    <Box sx={{ py: 8, backgroundColor: '#218000', color: '#FFFFFF', borderTop: '4px solid #E5A900' }}>
+      <Container maxWidth="xl">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>Our Services</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Sunday Services</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Prayer Groups</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Baptisms</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Marriage Counseling</Typography>
+            <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Harare Office (HQ)</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>45 Samora Machel Ave, Harare</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 242 756401</Typography>
+            <Typography variant="body2" sx={{ display: 'block' }}>Email: harare@nacc.co.zw</Typography>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>Our Partners</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Main Branch - Gwanda</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Harare Branch</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Bulawayo Branch</Typography>
+            <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Bulawayo Branch</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>120 Leopold Takawira Ave, Bulawayo</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 9 883011</Typography>
+            <Typography variant="body2" sx={{ display: 'block' }}>Email: bulawayo@nacc.co.zw</Typography>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>Office Hours</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Mon - Fri: 08:00am - 16:00pm</Typography>
-            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Saturday: 09:00am - 12:00pm</Typography>
+            <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Gwanda Office</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>14 Main Street, Gwanda</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 77 309 2522</Typography>
+            <Typography variant="body2" sx={{ display: 'block' }}>Email: naccchurch@gmail.com</Typography>
           </Grid>
         </Grid>
       </Container>
