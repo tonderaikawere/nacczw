@@ -55,6 +55,12 @@ const Donation: React.FC = () => {
             A contribution of $50 USD funds 1 complete Agricultural Training Pack for a small farmer.
           </Typography>
         </Box>
+              <Box sx={{ mt: 6, p: 4, backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
+          <Typography variant="h6" sx={{ fontWeight: 800, mb: 2 }}>Terms of Giving</Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
+            All financial gifts, donations, and annual subscriptions are non-refundable. NACC commits to utilizing these contributions exclusively for community welfare, pastoral support, and operational expenses in accordance with our ecumenical charter audits.
+          </Typography>
+        </Box>
       </Container>
       <ContactSection />
       <InformationSection />
