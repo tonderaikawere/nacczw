@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Button, Container } from '@mui/material';
+import { Box, Typography, Container, Card, CardContent, Grid } from '@mui/material';
 import ContactSection from '../../components/ContactSection';
 import InformationSection from '../../components/InformationSection';
 import Footer from '../../components/Footer';
@@ -7,18 +7,38 @@ import Footer from '../../components/Footer';
 const Donation: React.FC = () => {
   return (
     <Box sx={{ pt: '80px' }}>
-      <Box sx={{ py: 12, backgroundColor: '#0F172A', color: '#ffffff', textAlign: 'center' }}>
+      <Box sx={{ py: 8, backgroundColor: '#0F172A', color: '#ffffff', textAlign: 'center' }}>
         <Typography variant="h2" sx={{ fontFamily: '"Poppins", sans-serif', fontWeight: 800 }}>
           Donate & Support
         </Typography>
       </Box>
-      <Container maxWidth="md" sx={{ py: 8, textAlign: 'center' }}>
-        <Typography variant="h5" sx={{ mb: 4 }}>
-          Your support helps us fund agricultural workshops, youth mentorship groups, and rural community outreaches across Zimbabwe.
+      <Container maxWidth="lg" sx={{ py: 8 }}>
+        <Typography variant="h5" sx={{ mb: 6, textAlign: 'center', color: 'text.secondary', maxW: '800px', mx: 'auto' }}>
+          Your generous financial support funds local agricultural projects, pastoral certifications, leadership summits, and youth development training in remote districts across Zimbabwe.
         </Typography>
-        <Button variant="contained" size="large" onClick={() => alert('Redirecting to checkout...')}>
-          Donate Now
-        </Button>
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={6}>
+            <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', height: '100%', borderLeft: '4px solid #218000' }}>
+              <CardContent sx={{ p: 4 }}>
+                <Typography variant="h5" sx={{ fontWeight: 800, mb: 3 }}>Mobile Money Transfers</Typography>
+                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>EcoCash Merchant Code:</strong> *151*2*2*309252# (NACC Church)</Typography>
+                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Mukuru Recipient:</strong> Pastor S. Moyo (+263 77 309 2522) - Gwanda Branch</Typography>
+                <Typography variant="body2" sx={{ display: 'block' }}><strong>WorldRemit / Innbucks:</strong> Send transfer to +263 77 309 2522</Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', height: '100%', borderLeft: '4px solid #E5A900' }}>
+              <CardContent sx={{ p: 4 }}>
+                <Typography variant="h5" sx={{ fontWeight: 800, mb: 3 }}>Direct Bank Transfers</Typography>
+                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Bank Name:</strong> Steward Bank Zimbabwe</Typography>
+                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Account Name:</strong> National Association of Christian Churches</Typography>
+                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Account Number:</strong> 1009230985 (USD Account)</Typography>
+                <Typography variant="body2"><strong>Branch:</strong> Harare Main Branch</Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
       </Container>
       <ContactSection />
       <InformationSection />
