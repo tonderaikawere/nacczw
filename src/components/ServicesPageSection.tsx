@@ -108,7 +108,7 @@ const ServicesPageSection: React.FC = () => {
   };
 
   return (
-    <Box sx={{ padding: '20px', backgroundColor: '#f9f9f9' }}>
+    <Box sx={{ py: 8, px: 2, backgroundColor: '#ffffff' }}>
       <Typography variant="h3" sx={{ textAlign: 'left', marginBottom: '30px' }}>
         Our Services
       </Typography>
@@ -124,7 +124,7 @@ const ServicesPageSection: React.FC = () => {
               padding: '20px',
               marginBottom: '20px',
               borderRadius: '10px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.02)', border: '1px solid #E2E8F0',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
