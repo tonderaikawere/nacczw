@@ -71,7 +71,7 @@ const OurGallery: React.FC = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     color: '#ffffff',
-                    transition: 'opacity 0.3s ease',
+                    transition: 'opacity 0.2s ease-in-out',
                     zIndex: 1,
                     '&:hover': { opacity: 1 }
                   }}
