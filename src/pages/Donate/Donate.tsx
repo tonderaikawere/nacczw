@@ -39,7 +39,7 @@ const Donation: React.FC = () => {
             </Card>
           </Grid>
         </Grid>
-        <Box sx={{ mt: 8, p: 4, backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
+        <Box sx={{ mt: 6, p: 4, backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
           <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, textAlign: 'center' }}>Giving Impact Calculator</Typography>
           <Typography variant="body2" sx={{ textAlign: 'center', mb: 4, color: 'text.secondary' }}>Select or enter a donation amount (USD) to see the potential impact in our rural missions.</Typography>
           <Grid container spacing={3} justifyContent="center">
