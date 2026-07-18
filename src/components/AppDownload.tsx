@@ -22,6 +22,7 @@ const AppDownload: React.FC = () => {
             </Typography>
             <Typography variant="body1" sx={{ color: 'text.secondary', mb: 4 }}>
               The NACC Mobile App bridges member congregations across Zimbabwe. Get updates on local outreach programs, access sermon archives, register for leadership summits, and send mobile donations securely through Ecocash or bank channels.
+- **Offline Sermon Playback:** Download audio teachings to listen without mobile data.
             </Typography>
             <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
               <Button variant="contained" color="primary" startIcon={<AndroidIcon />} onClick={() => alert('Redirecting to Google Play Store Store...')}>
