@@ -45,6 +45,35 @@ const About: React.FC = () => {
             </Grid>
           </Grid>
         </Box>
+        <Box sx={{ mt: 8 }}>
+          <Typography variant="h4" sx={{ fontWeight: 800, mb: 3, color: 'primary.main' }}>Executive Board</Typography>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={6} md={3}>
+              <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', textAlign: 'center', p: 3 }}>
+                <Typography variant="h6" sx={{ fontWeight: 700 }}>Rev. Dr. J. Moyo</Typography>
+                <Typography variant="caption" color="text.secondary">National President</Typography>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', textAlign: 'center', p: 3 }}>
+                <Typography variant="h6" sx={{ fontWeight: 700 }}>Pastor E. Sibanda</Typography>
+                <Typography variant="caption" color="text.secondary">General Secretary</Typography>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', textAlign: 'center', p: 3 }}>
+                <Typography variant="h6" sx={{ fontWeight: 700 }}>Deaconess R. Gumbo</Typography>
+                <Typography variant="caption" color="text.secondary">National Treasurer</Typography>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', textAlign: 'center', p: 3 }}>
+                <Typography variant="h6" sx={{ fontWeight: 700 }}>Bishop M. Khumalo</Typography>
+                <Typography variant="caption" color="text.secondary">Trustee Chairman</Typography>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
       </Container>
       <ContactSection />
       <InformationSection />
