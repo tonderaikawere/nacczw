@@ -74,6 +74,7 @@ const About: React.FC = () => {
               <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', textAlign: 'center', p: 3 }}>
                 <Typography variant="h6" sx={{ fontWeight: 700 }}>Bishop M. Khumalo</Typography>
                 <Typography variant="caption" color="text.secondary">Trustee Chairman</Typography>
+                <Typography variant="body2" sx={{ mt: 1, fontSize: '0.8rem', color: 'text.secondary' }}>Providing spiritual governance, asset management, and board advisory oversight.</Typography>
               </Card>
             </Grid>
           </Grid>
