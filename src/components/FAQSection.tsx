@@ -42,7 +42,7 @@ const FAQSection: React.FC = () => {
                 boxShadow: 'none',
                 '&:before': { display: 'none' },
                 '&.Mui-expanded': {
-                  borderColor: 'secondary.main',
+                  borderColor: 'secondary.main', borderLeft: '4px solid #218000',
                   boxShadow: '0 4px 15px rgba(229, 169, 0, 0.05)',
                 }
               }}
