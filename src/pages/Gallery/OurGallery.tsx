@@ -52,6 +52,28 @@ const OurGallery: React.FC = () => {
                     '&:hover': { transform: 'scale(1.05)' }
                   }}
                 />
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    backgroundColor: 'rgba(33, 128, 0, 0.8)',
+                    opacity: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: '#ffffff',
+                    transition: 'opacity 0.3s ease',
+                    zIndex: 1,
+                    '&:hover': { opacity: 1 }
+                  }}
+                >
+                  <Typography variant="h6" sx={{ fontWeight: 800, fontSize: '1rem' }}>{g.title}</Typography>
+                  <Typography variant="caption" sx={{ color: 'secondary.main', fontWeight: 700 }}>{g.tag}</Typography>
+                </Box>
               </Box>
             </Grid>
           ))}
