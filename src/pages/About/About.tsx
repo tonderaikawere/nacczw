@@ -24,6 +24,27 @@ const About: React.FC = () => {
             Over the years, NACC has grown from a local support network into a recognized national body coordinating community outreach, leadership empowerment, and agricultural training across Zimbabwe's diverse provinces.
           </Typography>
         </Box>
+        <Box sx={{ mt: 6 }}>
+          <Typography variant="h4" sx={{ fontWeight: 800, mb: 3, color: 'primary.main' }}>Our Core Beliefs</Typography>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={6}>
+              <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>1. The Holy Scriptures</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We believe the Bible is the inspired, authoritative, and infallible Word of God, serving as our ultimate rule of faith and conduct.</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>2. Spiritual Unity & Fellowship</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We foster active collaboration among diverse independent churches, working together under Christ to build a strong community.</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>3. Social Empowerment</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We believe that local faith institutions should actively drive socio-economic growth, agricultural support, and community welfare.</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>4. Integrity & Service</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We commit to serve with absolute honesty, transparency, and christ-centered compassion across all NACC branches.</Typography>
+            </Grid>
+          </Grid>
+        </Box>
       </Container>
       <ContactSection />
       <InformationSection />
