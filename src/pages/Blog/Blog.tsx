@@ -38,7 +38,7 @@ const Blog: React.FC = () => {
               <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', borderRadius: '8px', borderLeft: '4px solid #218000', transition: 'transform 0.3s ease', '&:hover': { transform: 'translateY(-5px)', boxShadow: '0 8px 30px rgba(0,0,0,0.05)' }, height: '100%', display: 'flex', flexDirection: 'column' }}>
                 <CardContent sx={{ p: 4, flexGrow: 1 }}>
                   <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
-                    <Typography variant="caption" sx={{ color: 'secondary.main', fontWeight: 800 }}>{post.tag}</Typography>
+                    <Typography variant="caption" sx={{ color: 'secondary.main', '&:hover': { color: 'primary.main' }, fontWeight: 800 }}>{post.tag}</Typography>
                     <Typography variant="caption" color="text.secondary">{post.date}</Typography>
                   </Box>
                   <Typography variant="h4" sx={{ fontWeight: 800, mb: 2, fontSize: '1.5rem' }}>{post.title}</Typography>
