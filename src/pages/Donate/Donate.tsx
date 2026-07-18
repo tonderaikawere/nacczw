@@ -31,7 +31,7 @@ const Donation: React.FC = () => {
             <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', height: '100%', borderLeft: '4px solid #E5A900' }}>
               <CardContent sx={{ p: 4 }}>
                 <Typography variant="h5" sx={{ fontWeight: 800, mb: 3 }}>Direct Bank Transfers</Typography>
-                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Bank Name:</strong> Steward Bank Zimbabwe</Typography>
+                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Bank Name:</strong> Steward Bank Zimbabwe (SWIFT Code: ANZWZWHAXXX)</Typography>
                 <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Account Name:</strong> National Association of Christian Churches</Typography>
                 <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Account Number:</strong> 1009230985 (USD Account)</Typography>
                 <Typography variant="body2"><strong>Branch:</strong> Harare Main Branch</Typography>
