@@ -1,24 +1,30 @@
 import React from 'react';
 import { Box, Button, TextField, Typography, Container, Grid } from '@mui/material';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const ContactSection: React.FC = () => {
   return (
-    <Box sx={{ py: 8, backgroundColor: '#F8FAFC' }}>
-      <Container maxWidth="lg">
-        <Grid container spacing={6}>
+    <Box sx={{ py: 12, backgroundColor: '#F8FAFC' }}>
+      <Container maxWidth="xl">
+        <Grid container spacing={8}>
           <Grid item xs={12} md={6}>
-            <Typography variant="h4" sx={{ fontFamily: '"Playfair Display", serif', fontWeight: 800, mb: 2 }}>
+            <Typography variant="body2" sx={{ color: 'secondary.main', fontWeight: 800, mb: 1, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
               Contact Us
             </Typography>
-            <Typography variant="body1" sx={{ color: 'text.secondary', mb: 4 }}>
-              Send us a message and we will get back to you as soon as we can.
+            <Typography variant="h2" sx={{ mb: 3, fontSize: { xs: '2.2rem', md: '3.2rem' } }}>
+              GET IN TOUCH WITH NACC
+            </Typography>
+            <Typography variant="body1" sx={{ color: 'text.secondary', mb: 5 }}>
+              Send us a message regarding church registrations, membership applications, pastoral certifications, or community partnerships.
             </Typography>
             <form action="https://formsubmit.co/naccchurch@gmail.com" method="POST">
               <TextField label="Full Name" name="name" fullWidth required sx={{ mb: 3 }} />
               <TextField label="Email Address" name="email" type="email" fullWidth required sx={{ mb: 3 }} />
+              <TextField label="Phone Number" name="phone" fullWidth required sx={{ mb: 3 }} />
+              <TextField label="Church / Ministry Name" name="church" fullWidth required sx={{ mb: 3 }} />
               <TextField label="Type your message" name="message" multiline rows={4} fullWidth required sx={{ mb: 3 }} />
               <input type="hidden" name="_captcha" value="false" />
-              <Button type="submit" variant="contained">Send Message</Button>
+              <Button type="submit" variant="contained" size="large">Send Message</Button>
             </form>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -26,8 +32,8 @@ const ContactSection: React.FC = () => {
               title="Location Map"
               src="https://maps.google.com/maps?q=Gwanda,Zimbabwe&t=&z=13&ie=UTF8&iwloc=&output=embed"
               width="100%"
-              height="350"
-              style={{ border: 0, borderRadius: '12px' }}
+              height="400"
+              style={{ border: 0, borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}
               loading="lazy"
             ></iframe>
           </Grid>
