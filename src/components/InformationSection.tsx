@@ -3,7 +3,7 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 
 const InformationSection: React.FC = () => {
   return (
-    <Box sx={{ py: 8, backgroundColor: '#218000', color: '#FFFFFF', borderTop: '4px solid #E5A900' }}>
+    <Box sx={{ py: 10, backgroundColor: '#218000', color: '#FFFFFF', borderTop: '4px solid #E5A900' }}>
       <Container maxWidth="xl">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
