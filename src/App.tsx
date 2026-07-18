@@ -14,11 +14,34 @@ import Contact from './pages/Contact/Contact';
 import OurGallery from './pages/Gallery/OurGallery';
 import Donation from './pages/Donate/Donate';
 
+import { useEffect } from 'react';
+
+const PageTitleUpdater: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const titles: { [key: string]: string } = {
+      '/': 'Home - National Association of Christian Churches (NACC)',
+      '/about': 'About Us - NACC Zimbabwe',
+      '/services': 'Our Services - NACC Worship',
+      '/blog': 'News & Events - NACC Fellowship',
+      '/gallery': 'Media Gallery - NACC Gallery',
+      '/contact': 'Contact Us - NACC Offices',
+      '/donate': 'Donate & Support - Giving to NACC',
+      '/app-download': 'Download App - NACC Mobile'
+    };
+    document.title = titles[location.pathname] || 'National Association of Christian Churches';
+  }, [location]);
+
+  return null;
+};
+
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
+        <PageTitleUpdater />
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
