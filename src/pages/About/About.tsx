@@ -53,6 +53,7 @@ const About: React.FC = () => {
               <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', textAlign: 'center', p: 3 }}>
                 <Typography variant="h6" sx={{ fontWeight: 700 }}>Rev. Dr. J. Moyo</Typography>
                 <Typography variant="caption" color="text.secondary">National President</Typography>
+                <Typography variant="body2" sx={{ mt: 1, fontSize: '0.8rem', color: 'text.secondary' }}>Serving NACC since 2009. Former theological lecturer with a passion for ecumenical unity.</Typography>
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
