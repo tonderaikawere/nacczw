@@ -15,6 +15,14 @@ This is the official web application for the **National Association of Christian
 - `src/components/`: Modular visual sections including Hero, About, Ministries, Sermons, Testimonials, FAQs, and a Scripture Marquee.
 - `src/pages/`: Configured router subpages representing local branch details, calculator donation support, event filter streams, and store downloads.
 
+## NACC Features
+
+- **Zimbabwe Branch Offices:** Harare, Bulawayo, Mutare, Gwanda, Gweru, Masvingo, Chinhoyi, and Kwekwe.
+- **Mobile Mobile Integration:** Built-in support guides for EcoCash Merchant codes, Mukuru transfers, and Steward Bank wires.
+- **Testimonials Reviews:** Real congregation feedback with star ratings and speaker details.
+- **Scripture Ticker Marquee:** Auto-scrolling scripture marquee on the home page.
+- **App Store & Play Store Promo:** Dynamic mobile application details including offline sermon playback and prayer request portals.
+
 ## Developed By
 
 Developed by **Kawerify Tech** - [kawerifytech.com](https://kawerifytech.com).
