@@ -21,7 +21,7 @@ const Donation: React.FC = () => {
             <Card sx={{ border: '1px solid #E2E8F0', boxShadow: 'none', height: '100%', borderLeft: '4px solid #218000' }}>
               <CardContent sx={{ p: 4 }}>
                 <Typography variant="h5" sx={{ fontWeight: 800, mb: 3 }}>Mobile Money Transfers</Typography>
-                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>EcoCash Merchant Code:</strong> *151*2*2*309252# (NACC Church)</Typography>
+                <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>EcoCash Merchant Code:</strong> *151*2*2*309252# (NACC Church) - Please confirm recipient is registered as NACC before entering PIN.</Typography>
                 <Typography variant="body2" sx={{ display: 'block', mb: 2 }}><strong>Mukuru Recipient:</strong> Pastor S. Moyo (+263 77 309 2522) - Gwanda Branch</Typography>
                 <Typography variant="body2" sx={{ display: 'block' }}><strong>WorldRemit / Innbucks:</strong> Send transfer to +263 77 309 2522</Typography>
               </CardContent>
