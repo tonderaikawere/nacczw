@@ -38,7 +38,7 @@ const About: React.FC = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>3. Social Empowerment</Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We believe that local faith institutions should actively drive socio-economic growth, agricultural support, and community welfare.</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We believe that local faith institutions should actively drive socio-economic growth, agricultural support, and community welfare. Referencing Galatians 6:10 and James 2:17 to show our faith through social action.</Typography>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>4. Integrity & Service</Typography>
