@@ -19,6 +19,12 @@ const InformationSection: React.FC = () => {
             <Typography variant="body2" sx={{ display: 'block' }}>Email: bulawayo@nacc.co.zw</Typography>
           </Grid>
           <Grid item xs={12} md={4}>
+            <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Gweru Branch</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>88 Main Street, Gweru</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 54 220309</Typography>
+            <Typography variant="body2" sx={{ display: 'block' }}>Email: gweru@nacc.co.zw</Typography>
+          </Grid>
+          <Grid item xs={12} md={4}>
             <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Gwanda Office</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>14 Main Street, Gwanda</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 77 309 2522</Typography>
