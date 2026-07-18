@@ -42,7 +42,7 @@ const About: React.FC = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>4. Integrity & Service</Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We commit to serve with absolute honesty, transparency, and christ-centered compassion across all NACC branches.</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>We commit to serve with absolute honesty, transparency, and christ-centered compassion across all NACC branches. Referencing Colossians 3:23 and Proverbs 11:3 to ensure honest, faithful stewardship.</Typography>
             </Grid>
           </Grid>
         </Box>
