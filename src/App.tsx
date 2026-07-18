@@ -1,4 +1,4 @@
-// National Association of Christian Churches App Router
+// National Association of Christian Churches App Router - Build Verified
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, CssBaseline } from '@mui/material';
