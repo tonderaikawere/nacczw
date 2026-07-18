@@ -26,7 +26,7 @@ const Blog: React.FC = () => {
       </Box>
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Box sx={{ display: 'flex', gap: 2, mb: 4, flexWrap: 'wrap', justifyContent: 'center' }}>
-          {["All", "Outreach", "Training", "Fellowship"].map((cat) => (
+          {["All", "Outreach", "Training", "Fellowship", "Youth"].map((cat) => (
             <Button key={cat} variant="outlined" color="primary" sx={{ borderRadius: 1 }}>
               {cat}
             </Button>
