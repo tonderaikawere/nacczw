@@ -6,7 +6,7 @@ const ContactSection: React.FC = () => {
   return (
     <Box sx={{ py: 12, backgroundColor: '#F8FAFC' }}>
       <Container maxWidth="xl">
-        <Grid container spacing={8}>
+        <Grid container spacing={6}>
           <Grid item xs={12} md={6}>
             <Typography variant="body2" sx={{ color: 'secondary.main', fontWeight: 800, mb: 1, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
               Contact Us
