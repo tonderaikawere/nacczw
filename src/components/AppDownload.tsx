@@ -25,6 +25,7 @@ const AppDownload: React.FC = () => {
 - **Offline Sermon Playback:** Download audio teachings to listen without mobile data.
 - **Digital Registration:** Apply for NACC church credentials and track annual renewals.
 - **Leader Forums:** Connect directly with branch pastors and regional trustees.
+- **Prayer Dashboard:** Submit live prayer requests directly to the NACC Prayer Support team.
             </Typography>
             <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
               <Button variant="contained" color="primary" startIcon={<AndroidIcon />} onClick={() => alert('Redirecting to Google Play Store Store...')}>
