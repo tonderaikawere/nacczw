@@ -12,37 +12,43 @@ const InformationSection: React.FC = () => {
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 242 756401</Typography>
             <Typography variant="body2" sx={{ display: 'block' }}>Email: harare@nacc.co.zw</Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Bulawayo Branch</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>120 Leopold Takawira Ave, Bulawayo</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 9 883011</Typography>
             <Typography variant="body2" sx={{ display: 'block' }}>Email: bulawayo@nacc.co.zw</Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Gweru Branch</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>88 Main Street, Gweru</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 54 220309</Typography>
             <Typography variant="body2" sx={{ display: 'block' }}>Email: gweru@nacc.co.zw</Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Masvingo Branch</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>55 Robert Mugabe Way, Masvingo</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 39 264022</Typography>
             <Typography variant="body2" sx={{ display: 'block' }}>Email: masvingo@nacc.co.zw</Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Chinhoyi Branch</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>12 Magamba Way, Chinhoyi</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 67 210988</Typography>
             <Typography variant="body2" sx={{ display: 'block' }}>Email: chinhoyi@nacc.co.zw</Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Kwekwe Branch</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>77 Nelson Mandela Way, Kwekwe</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 55 230911</Typography>
             <Typography variant="body2" sx={{ display: 'block' }}>Email: kwekwe@nacc.co.zw</Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
+            <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Kariba Branch</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>99 Zambezi Way, Kariba</Typography>
+            <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 61 214099</Typography>
+            <Typography variant="body2" sx={{ display: 'block' }}>Email: kariba@nacc.co.zw</Typography>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ fontWeight: 800, mb: 3 }}>Gwanda Office</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>14 Main Street, Gwanda</Typography>
             <Typography variant="body2" sx={{ display: 'block', mb: 1 }}>Phone: +263 77 309 2522</Typography>
