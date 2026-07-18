@@ -9,6 +9,11 @@ const allPosts = [
   { title: "Visit to Felabusi Village", tag: "Outreach", speaker: "Rev. Dr. J. Moyo", date: "Jul 20, 2024", body: "We conducted a local agricultural training session and donated cattle medicine to farmers in Felabusi Village, Mutare, supporting food security and livestock health." },
   { title: "Annual Zion Fellowship Conference", tag: "Fellowship", speaker: "Apostle E. Ncube", date: "Sep 05, 2024", body: "Gathering representatives from independent Zionist congregations across Zimbabwe to promote ecumenical collaboration, praise, and prayer partnerships." },
   { title: "Youth Empowerment Seminar", tag: "Youth", speaker: "Sister P. Dube", date: "Oct 12, 2024", body: "Equipping young christian leaders with skills in entrepreneurship, local trades, and spiritual discipleship workshops." }
+,
+  { title: "Annual Youth Fellowship Camp in Bulawayo", tag: "Youth", speaker: "Sister P. Dube", date: "Dec 10, 2024", body: "A 4-day spiritual and leadership bootcamp for youths, focusing on bible study, career mentorship, and sports activities." },
+  { title: "Harare Ecumenical Choir Festival", tag: "Fellowship", speaker: "Deaconess R. Gumbo", date: "Nov 02, 2024", body: "Bringing together choral groups from 15 congregations in Harare to praise and celebrate indigenous worship traditions." },
+  { title: "Masvingo Regional Farming Workshop", tag: "Training", speaker: "Pastor E. Sibanda", date: "Oct 28, 2024", body: "Hands-on training session for rural farmers on modern soil conservation, irrigation systems, and harvest preservation." },
+  { title: "Gweru Welfare and Food Relief Outreach", tag: "Outreach", speaker: "Rev. Dr. J. Moyo", date: "Nov 15, 2024", body: "Distributing food packs, winter clothing, and sanitation supplies to underprivileged families in Gweru districts." }
 ];
 
 const Blog: React.FC = () => {
