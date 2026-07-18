@@ -12,7 +12,7 @@ const AppDownload: React.FC = () => {
         </Typography>
       </Box>
       <Container maxWidth="lg" sx={{ py: 12 }}>
-        <Grid container spacing={6} alignItems="center">
+        <Grid container spacing={4} alignItems="center">
           <Grid item xs={12} md={6}>
             <Typography variant="body2" sx={{ color: 'secondary.main', fontWeight: 800, mb: 1, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
               NACC Mobile App
