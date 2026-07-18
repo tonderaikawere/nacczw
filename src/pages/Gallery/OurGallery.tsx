@@ -17,6 +17,11 @@ const galleryImages = [
   { img: '/images/hero.png', tag: 'Worship', title: 'Sunday Main Sanctuary' },
   { img: '/images/hero2.png', tag: 'Youth', title: 'Youth Camp Gathering' },
   { img: '/images/hero3.png', tag: 'Training', title: 'Pastor Ordination Ceremony' }
+,
+  { img: '/images/img1.png', tag: 'Worship', title: 'Bulawayo Worship Night' },
+  { img: '/images/img2.png', tag: 'Outreach', title: 'Food Relief Harare' },
+  { img: '/images/img3.png', tag: 'Training', title: 'Farming Practice Chinhoyi' },
+  { img: '/images/img4.png', tag: 'Youth', title: 'Youth Netball Cup Gweru' }
 ];
 
 const OurGallery: React.FC = () => {
