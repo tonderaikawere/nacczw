@@ -24,7 +24,12 @@ const ContactSection: React.FC = () => {
               <TextField label="Church / Ministry Name" name="church" fullWidth required sx={{ mb: 3 }} />
               <TextField label="Type your message" name="message" multiline rows={4} fullWidth required sx={{ mb: 3 }} />
               <input type="hidden" name="_captcha" value="false" />
-              <Button type="submit" variant="contained" size="large">Send Message</Button>
+              <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', mt: 3 }}>
+                <Button type="submit" variant="contained" size="large">Send Message</Button>
+                <Button variant="outlined" color="primary" href="https://wa.me/263773092522" target="_blank" size="large" sx={{ borderWidth: '2px', '&:hover': { borderWidth: '2px' } }}>
+                  Chat on WhatsApp
+                </Button>
+              </Box>
             </form>
           </Grid>
           <Grid item xs={12} md={6}>
