@@ -21,7 +21,8 @@ const About: React.FC = () => {
             The National Association of Christian Churches (NACC) was established as an ecumenical home for indigenous Christian institutions in Zimbabwe, particularly bringing together Apostolic, Zionist, Pentecostal, and other independent community ministries. Founded on the principle of spiritual unity, NACC was born out of a collective desire to help these institutions collaborate on national development, social empowerment, and spreading the gospel of peace.
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3, lineHeight: 1.8 }}>
-            Over the years, NACC has grown from a local support network into a recognized national body coordinating community outreach, leadership empowerment, and agricultural training across Zimbabwe's diverse provinces.
+            Over the years, NACC has grown from a local support network into a recognized national body:
+- **2009:** Established initial ecumenical gatherings of indigenous apostolic and Zionist elders in Gwanda to foster mutual support.
           </Typography>
         </Box>
         <Box sx={{ mt: 6 }}>
