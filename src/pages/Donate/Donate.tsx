@@ -61,6 +61,12 @@ const Donation: React.FC = () => {
             All financial gifts, donations, and annual subscriptions are non-refundable. NACC commits to utilizing these contributions exclusively for community welfare, pastoral support, and operational expenses in accordance with our ecumenical charter audits.
           </Typography>
         </Box>
+        <Box sx={{ mt: 4, p: 4, backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
+          <Typography variant="h6" sx={{ fontWeight: 800, mb: 2 }}>Donor Privacy Policy</Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
+            NACC protects donor personal details. We do not sell, rent, or share donor contact list details with external marketing organizations. Transacted information is processed securely through EcoCash or Steward Bank systems.
+          </Typography>
+        </Box>
       </Container>
       <ContactSection />
       <InformationSection />
