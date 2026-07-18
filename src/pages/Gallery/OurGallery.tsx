@@ -20,7 +20,7 @@ const galleryImages = [
 ,
   { img: '/images/img1.png', tag: 'Worship', title: 'Bulawayo Worship Night' },
   { img: '/images/img2.png', tag: 'Outreach', title: 'Food Relief Harare' },
-  { img: '/images/img3.png', tag: 'Training', title: 'Farming Practice Chinhoyi' },
+  { img: '/images/img3.png', tag: 'Training', title: 'Farming Practice Chinhoyi conservation workshop' },
   { img: '/images/img4.png', tag: 'Youth', title: 'Youth Netball Cup Gweru regional final championship' }
 ];
 
